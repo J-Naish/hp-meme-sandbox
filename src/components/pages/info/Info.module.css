@@ -1,0 +1,127 @@
+/* common rules */
+.container {
+  overflow: hidden;
+  position: relative;
+}
+
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.tableItem {
+  display: flex;
+  border-top: 1px solid white;
+}
+
+.leftTableItem {
+  width: 30%;
+}
+.rightTableItem {
+  width: 80%;
+}
+.leftTableItem, .rightTableItem {
+  align-self: center;
+}
+
+
+
+/* desktop view */
+@media (min-width: 1025px) {
+
+  .container {
+    height: 700px;
+  }
+
+  .content {
+    margin: 120px 60px 0 60px;
+  }
+
+  .title {
+    font-size: 36px;
+    margin-bottom: 60px;
+  }
+
+  .tableItem {
+    font-size: 18px;
+  }
+
+  .leftTableItem {
+    width: 20%;
+  }
+  .rightTableItem {
+    width: 80%;
+  }
+
+  .leftTableItem, .rightTableItem {
+    padding: 14px 0;
+  }
+}
+
+/* tablet view */
+@media (max-width: 1024px) and (min-width: 481px) {
+
+  .container {
+    height: 500px;
+  }
+
+  .content {
+    margin: 80px 30px 0 30px;
+  }
+
+  .title {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+
+  .tableItem {
+    font-size: 14px;
+  }
+
+  .leftTableItem {
+    width: 25%;
+  }
+  .rightTableItem {
+    width: 75%;
+  }
+
+  .leftTableItem, .rightTableItem {
+    padding: 10px 0;
+  }
+}
+
+
+/* mobile view */
+@media (max-width: 480px) {
+
+  .container {
+    height: 450px;
+  }
+
+  .content {
+    margin: 60px 20px 0 20px;
+  }
+
+  .title {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+
+  .tableItem {
+    font-size: 11px;
+  }
+
+  .leftTableItem {
+    width: 30%;
+  }
+  .rightTableItem {
+    width: 70%;
+  }
+
+  .leftTableItem, .rightTableItem {
+    padding: 10px 0;
+  }
+}
