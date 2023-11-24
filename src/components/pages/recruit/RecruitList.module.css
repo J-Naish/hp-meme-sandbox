@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid white;
+  cursor: pointer;
+}
+
+.title {
+  align-self: center;
+}
+
+
+/* desktop */
+@media (min-width: 1025px) {
+  .container {
+    width: 300px;
+    padding-bottom: 8px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+}
+
+/* tablet */
+@media (max-width: 1024px) and (min-width: 481px) {
+  .container {
+    width: 240px;
+    padding-bottom: 6px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 200px;
+    padding-bottom: 4px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+}
