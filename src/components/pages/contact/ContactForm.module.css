@@ -1,0 +1,196 @@
+/* common rules */
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.selection {
+  padding: 12px 10px;
+  border: none;
+  border-radius: 2px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.labelContainer {
+  display: flex;
+  margin-bottom: 6px;
+}
+
+.error {
+  margin-left: 4px;
+  color: red;
+}
+
+.gray {
+  color: gray;
+}
+
+.black {
+  color: black;
+}
+
+.selectionWrapper {
+  border-radius: 2px;
+  background-color: white;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.field, .textarea, .selection {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.field, .textarea {
+  border-radius: 2px;
+  border: none;
+  resize: none;
+}
+
+.textarea {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.selection:disabled {
+  background-color: transparent !important;
+  color: rgb(150, 150, 150) !important;
+}
+
+.field:disabled, .textarea:disabled {
+  background-color: white !important;
+  color: rgb(150, 150, 150) !important;
+}
+
+.buttonContainer {
+  display: flex;
+}
+
+.sendingMessage {
+  align-self: center;
+}
+
+
+/* desktop view */
+@media (min-width: 1025px) {
+
+  /* define width and padding as variable */
+  .container {
+    --width: 600px;
+    --padding: 12px;
+  }
+
+  .field, .textarea {
+    width: var(--width);
+    padding: var(--padding);
+    margin-bottom: 16px;
+  }
+
+  .textarea {
+    height: 200px;
+  }
+
+  .selectionWrapper {
+    width: 300px;
+  }
+
+  .labelContainer {
+    margin-bottom: 8px;
+  }
+
+  .buttonContainer {
+    width: calc(var(--width) + var(--padding) * 2);
+    margin-top: 30px;
+  }
+
+  .sendingMessage {
+    font-size: 32px;
+  }
+
+}
+
+
+/* tablet view */
+@media (max-width: 1024px) and (min-width: 481px) {
+
+  /* define width and padding as variable */
+  .container {
+    --width: 400px;
+    --padding: 12px;
+  }
+
+  .field, .textarea {
+    width: var(--width);
+    padding: var(--padding);
+    margin-bottom: 16px;
+  }
+
+  .textarea {
+    height: 160px;
+  }
+
+  .selectionWrapper {
+    width: 240px;
+  }
+
+  .labelContainer {
+    margin-bottom: 8px;
+  }
+
+  .buttonContainer {
+    width: calc(var(--width) + var(--padding) * 2);
+    margin-top: 20px;
+  }
+
+  .sendingMessage {
+    font-size: 24px;
+  }
+
+}
+
+
+/* mobile view */
+@media (max-width: 480px) {
+
+  /* define width and padding as variable */
+  .container {
+    --width: 260px;
+    --padding: 12px;
+  }
+
+  .field, .textarea {
+    width: var(--width);
+    padding: var(--padding);
+    margin-bottom: 16px;
+  }
+
+  .textarea {
+    height: 120px;
+  }
+
+  .selectionWrapper {
+    width: 240px;
+  }
+
+  .labelContainer {
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+
+  .buttonContainer {
+    width: calc(var(--width) + var(--padding) * 2);
+    margin-top: 15px;
+  }
+
+  .error {
+    font-size: 10px;
+  }
+
+  .sendingMessage {
+    font-size: 18px;
+  }
+
+}

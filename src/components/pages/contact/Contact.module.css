@@ -1,0 +1,177 @@
+/* common rules */
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+}
+
+.formStatus {
+  text-align: center;
+}
+
+.completeContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+/* desktop view */
+@media (min-width: 1025px) {
+
+  .container {
+    margin: 100px 0 80px;
+  }
+
+  .titleContainer {
+    width: 70%;
+  }
+
+  .title {
+    font-size: 48px;
+  }
+
+  .formStatus {
+    font-size: 24px;
+    height: 42px;
+  }
+
+  .stepUi {
+    margin-top: 60px;
+  }
+
+  .formContainer {
+    margin-top: 30px;
+  }
+
+  .completeTitle {
+    font-size: 24px;
+    margin-top: 40px;
+  }
+
+  .completeContent {
+    margin-top: 80px;
+    font-size: 20px;
+  }
+
+  .completeButtonContainer {
+    margin-top: 80px;
+    margin-bottom: 240px;
+  }
+
+}
+
+
+/* tablet view */
+@media (max-width: 1024px) and (min-width: 481px) {
+
+  .container {
+    margin: 100px 0 60px;
+  }
+
+  .titleContainer {
+    width: 80%;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .formStatus {
+    font-size: 20px;
+    height: 30px;
+  }
+
+  .stepUi {
+    margin-top: 50px;
+  }
+
+  .formContainer {
+    margin-top: 20px;
+  }
+
+  .completeTitle {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+
+  .completeContent {
+    margin-top: 60px;
+    font-size: 20px;
+    width: 80%;
+  }
+
+  .completeButtonContainer {
+    margin-top: 60px;
+    margin-bottom: 240px;
+  }
+
+}
+
+
+/* mobile view */
+@media (max-width: 480px) {
+
+  .container {
+    margin: 80px 0 100px;
+  }
+
+  .titleContainer {
+    width: 85%;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 12px;
+  }
+
+  .formStatus {
+    font-size: 18px;
+    height: 32px;
+  }
+
+  .stepUi {
+    margin-top: 40px;
+  }
+
+  .formContainer {
+    margin-top: 10px;
+  }
+
+  .completeTitle {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .completeContent {
+    margin-top: 50px;
+    font-size: 20px;
+    width: 85%;
+  }
+
+  .completeButtonContainer {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+}

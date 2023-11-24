@@ -1,0 +1,108 @@
+/* common rules */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.line {
+  height: 2px;
+  flex-grow: 1;
+  align-self: center;
+  z-index: 0;
+}
+
+.completed {
+  color: white;
+}
+.completedBg {
+  background-color: white;
+}
+.uncompleted {
+  color: gray;
+}
+.uncompletedBg {
+  background-color: gray;
+}
+
+
+/* desktop view */
+@media (min-width: 1025px) {
+
+  .container {
+    width: 420px;
+  }
+
+  .circle {
+    width: 36px;
+    height: 36px;
+    margin: 2px 0;
+  }
+
+  .line {
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+
+}
+
+
+/* tablet view */
+@media (max-width: 1024px) and (min-width: 481px) {
+
+  .container {
+    width: 360px;
+  }
+
+  .circle {
+    width: 30px;
+    height: 30px;
+    margin: 2px 0;
+  }
+
+  .line {
+    margin-right: -16px;
+    margin-left: -16px;
+  }
+
+}
+
+
+/* mobile view */
+@media (max-width: 480px) {
+
+  .container {
+    width: 240px;
+  }
+
+  .circle {
+    width: 24px;
+    height: 24px;
+    margin: 2px 0;
+  }
+
+  .line {
+    margin-right: -16px;
+    margin-left: -16px;
+  }
+
+  .number, .label {
+    font-size: 12px;
+  }
+
+}
