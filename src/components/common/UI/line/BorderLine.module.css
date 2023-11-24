@@ -1,0 +1,21 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.thickLine {
+  width: 30%;
+  height: 4px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.thinLine {
+  width: 70%;
+  height: 2px;
+  background-color: gray;
+  border-radius: 1px;
+}
