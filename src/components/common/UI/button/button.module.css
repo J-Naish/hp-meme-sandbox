@@ -1,0 +1,144 @@
+.linkButton {
+  text-decoration: none;
+}
+
+.defaultButton {
+  border: 1px solid white;
+  cursor: pointer;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.triangleContainer {
+  display: flex;
+  align-items: center;
+}
+
+.triangle {
+  transform: rotate(-90deg);
+  transition: filter 0.5s ease;
+}
+
+
+.blackButton {
+  background-color: transparent;
+  color: white;
+}
+
+/* button color patterns */
+.whiteButton {
+  background-color: white;
+  color: black;
+}
+
+.whiteTriangle {
+  filter: invert(0);
+}
+
+.blackTriangle {
+  filter: invert(1);
+}
+
+.blackButton:hover {
+  background-color: white;
+  color: black;
+}
+.whiteButton:hover {
+  background-color: transparent;
+  color: white;
+}
+.blackButton:hover .whiteTriangle {
+  filter: invert(1);
+}
+.whiteButton:hover .blackTriangle {
+  filter: invert(0);
+}
+.whiteTriangle:hover {
+  filter: invert(0);
+}
+.blackTriangle:hover {
+  filter: invert(1);
+}
+
+
+
+/* desktop */
+@media (min-width: 1025px) {
+  
+  .defaultButton {
+    width: 180px;
+    height: 40px;
+  }
+
+  .triangleContainer {
+    margin-left: 20px;
+  }
+
+  .triangle {
+    width: 10px;
+    height: 10px;
+  }
+
+  .label {
+    margin-left: 15px;
+    padding-bottom: 2px;
+    font-size: 15px;
+  }
+
+}
+
+
+/* tablet */
+@media (max-width: 1024px) and (min-width: 481px) {
+
+  .defaultButton {
+    width: 150px;
+    height: 35px;
+  }
+
+  .triangleContainer {
+    margin-left: 18px;
+  }
+
+  .triangle {
+    width: 9px;
+    height: 9px;
+  }
+
+  .label {
+    margin-left: 13px;
+    padding-bottom: 2px;
+    font-size: 13px;
+  }
+
+}
+
+
+/* mobile */
+@media (max-width: 480px) {
+  .defaultButton {
+    width: 120px;
+    height: 30px;
+  }
+
+  .triangleContainer {
+    margin-left: 16px;
+  }
+
+  .triangle {
+    width: 8px;
+    height: 8px;
+  }
+
+  .label {
+    margin-left: 11px;
+    padding-bottom: 2px;
+    font-size: 11px;
+  }
+}
