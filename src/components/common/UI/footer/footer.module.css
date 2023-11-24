@@ -1,0 +1,212 @@
+/* common rules */
+.container {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.container a {
+  text-decoration: none;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 80%;
+  height: 80%;
+}
+
+
+
+/* desktop view */
+@media (min-width: 1025px) {
+
+  .container {
+    padding: 20px 0;
+  }
+
+  .logo {
+    width: 45px;
+    height: 45px;
+  }
+
+  .head, .leftItem {
+    margin-left: 15px;
+  }
+  .rightItem {
+    margin-right: 15px;
+  }
+
+  .listContainer {
+    margin-bottom: 5px;
+    width: 150px;
+  }
+  .listContainerRight {
+    width: auto;
+  }
+
+  .listTitle {
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
+
+  .title {
+    font-size: 24px;
+    margin-left: 10px;
+  }
+
+  .body {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+  }
+
+  .leftItem {
+    display: flex;
+  }
+
+  .list {
+    font-size: 16px;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .listItem {
+    margin-bottom: 4px;
+  }
+
+  .listItem:hover {
+    text-decoration: underline;
+  }
+
+}
+
+
+
+/* tablet view */
+@media (max-width: 1024px) and (min-width: 521px) {
+
+  .container {
+    padding-top: 20px;
+    padding-bottom: 70px;
+  }
+
+  .title {
+    font-size: 24px;
+    margin-left: 8px;
+  }
+
+  .logo {
+    width: 35px;
+    height: 35px;
+  }
+
+  .head, .leftItem {
+    margin-left: 16px;
+  }
+  .rightItem {
+    margin-right: 26px;
+  }
+
+  .body {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+  }
+
+
+  .listContainer {
+    width: 140px;
+  }
+  .listContainerRight {
+    width: auto;
+  }
+
+  .listTitle {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .list {
+    font-size: 16px;
+    padding-left: 8px;
+  }
+
+  .leftItem {
+    display: flex;
+  }
+
+  .listItem {
+    margin-bottom: 3px;
+  }
+
+}
+
+
+
+/* mobile view */
+@media (max-width: 520px) {
+
+  .container {
+    padding-top: 20px;
+  }
+
+  .body, .head {
+    margin-left: 16px;
+  }
+
+  .body {
+    margin-top: 24px;
+  }
+
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .title {
+    font-size: 26px;
+    margin-left: 4px;
+  }
+
+  .bodyMobile {
+    display: flex;
+  }
+
+  .leftItemMobile, .rightItemMobile {
+    margin-right: 8px;
+  }
+
+  .listContainer {
+    width: 170px;
+    height: 160px;
+  }
+
+  .listTitle {
+    font-size: 22px;
+    margin-bottom: 0;
+  }
+
+  .list {
+    font-size: 18px;
+    padding-left: 6px;
+    margin-top: 10px;
+  }
+
+  .listItem {
+    margin-bottom: 8px;
+  }
+
+}
