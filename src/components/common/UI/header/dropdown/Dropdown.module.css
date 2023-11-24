@@ -1,0 +1,86 @@
+.container {
+  position: relative;
+}
+
+.title , .list {
+  cursor: pointer;
+}
+
+.title {
+  transition: text-shadow 0.3s;
+}
+
+.title:hover {
+  text-shadow: white 1px 0 10px;
+}
+
+.list {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: var(--dropdownZIndex);
+  padding-top: 30px;
+}
+
+.visible {
+  animation-name: slideIn;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.invisible {
+  animation-name: slideOut;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.borderBottom {
+  border-bottom: 1px solid gray;
+}
+
+.list a {
+  text-decoration: none;
+  color: black;
+}
+
+.listItem {
+  background-color: white;
+  white-space: nowrap;
+  padding: 8px 24px 8px 12px;
+  opacity: 0;
+  transform: translateX(-30%);
+  transition: opacity 0.3s, transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.listItem:hover {
+  background-color: var(--blackBlue);
+  color: white;
+}
+
+
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-30%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+@keyframes slideOut {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-30%);
+  }
+}

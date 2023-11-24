@@ -1,0 +1,56 @@
+.hamburgerSymbol, .hamburgerSymbol * {
+  box-sizing: border-box;
+}
+
+.hamburgerSymbol {
+  height: 36px;
+  width: 36px;
+  position: relative;
+  z-index: var(--hamburgerZIndex);
+}
+
+.hamburgerSymbol .line {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  transition: transform 0.15s ease-in-out;
+}
+
+.hamburgerSymbol .innerLine {
+  height: 4px;
+  width: 32px;
+  background: white;
+  border-radius: 4px;
+  position: absolute;
+  transition: transform 0.1s ease-in-out;
+  transition-delay: 0.1s;
+}
+
+.hamburgerSymbol .innerLine1 {
+  top: 12px;
+  transform: translateY(-5px);
+}
+
+.hamburgerSymbol .innerLine2 {
+  bottom: 12px;
+  transform: translateY(5px);
+}
+
+.hamburgerSymbol.active .line1 {
+  transform: rotateZ(45deg);
+}
+
+.hamburgerSymbol.active .line2 {
+  transform: rotateZ(-45deg);
+}
+
+.hamburgerSymbol.active .innerLine {
+  transform: none;
+  transition: transform 0.1s ease-in-out;
+}
+
+.hamburgerSymbol.active .line {
+  transition-delay: 0.1s;
+}

@@ -8,6 +8,25 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+
+  color: white;
+
+  /* define z-index as variable */
+  --dropdownZIndex: 300;
+  --hamburgerZIndex: 300;
+  --headerZIndex: 100;
+  --loadingScreenZIndex: 9999;
+  --backgroundZIndex: -1;
+  --scrollableCanvasZIndex: 50;
+
+  /* define bg color as variables */
+  --blackBackground: rgba(0, 0, 0, 0.95);
+
+  --blackShadow: 2px 2px 3px black;
+
+  --blackBlue: rgb(30, 30, 40);
+
+  margin-bottom: 100vh;
 }
 
 a {

@@ -1,0 +1,174 @@
+/* common rules */
+.container {
+  position: fixed;
+  top: 0;
+  z-index: var(--headerZIndex);
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.5s ease;
+}
+
+.black {
+  background-color: black;
+}
+
+.transparent {
+  background-color: transparent;
+}
+
+.logoContainer {
+  height: 50%;
+  aspect-ratio: 1;
+}
+
+.logoContainer img {
+  width: 100%;
+  height: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.hamburger {
+  position: relative;
+}
+
+.leftNav ul, .rightDropdown {
+  transform: translateY(-6%); /* place the text vertical center */
+}
+
+
+
+/* desktop view */
+@media (min-width: 1025px) {
+  .container {
+    height: 80px;
+    font-size: 24px;
+    --margin: 20px;
+  }
+
+  .logoContainer {
+    margin-left: var(--margin);
+  }
+
+  .leftNav ul {
+    display: flex;
+    list-style: none;
+  }
+
+  .leftNav li, .rightNav a {
+    text-decoration: none;
+  }
+
+  .leftNav li {
+    margin-left: 30px;
+  }
+
+  .rightNav {
+    margin-right: var(--margin);
+    line-height: 30px;
+  }
+
+  .dropdownSymbol, .hamburger, .companyText {
+    display: none;
+  }
+}
+
+
+/* tablet view */
+@media (min-width: 481px) and (max-width:1024px) {
+  .container {
+    height: 65px;
+    font-size: 18px;
+    --margin: 16px;
+  }
+
+  .logoContainer {
+    margin-left: var(--margin);
+  }
+
+  .leftNav ul {
+    display: flex;
+    list-style: none;
+  }
+
+  .leftNav li, .rightNav a {
+    text-decoration: none;
+  }
+
+  .dropdown {
+    display: flex;
+    margin-left: 20px;
+  }
+
+  .rightDropdown {
+    display: flex;
+    margin-right: var(--margin);
+  }
+
+  .dropdownSymbol img {
+    margin-left: 4px;
+    width: 10px;
+    height: 10px;
+  }
+
+  .hamburger, .companyText {
+    display: none;
+  }
+}
+
+
+
+/* mobile view */
+@media (max-width: 480px) {
+  .container {
+    height: 60px;
+    font-size: 16px;
+    justify-content: space-between;
+    --margin: 12px;
+  }
+
+  .logoContainer {
+    z-index: calc(var(--hamburgerZIndex) + 1);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    margin-left: var(--margin);
+  }
+
+  .companyText {
+    font-size: 24px;
+    margin-left: 8px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .hamburger {
+    margin-right: var(--margin);
+  }
+
+  .hamburgerMenuWrapper {
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: calc(var(--hamburgerZIndex) - 1);
+    overflow: hidden;
+    transition: height 0.5s ease-in-out;
+  }
+
+  .hamburgerMenu {
+    padding: 0 5%;
+    margin-top: 120px;
+  }
+
+}

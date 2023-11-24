@@ -1,0 +1,38 @@
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 0;
+}
+
+.title {
+  font-size: 20px;
+  align-self: center;
+}
+
+.toggleSymbol {
+  font-size: 24px;
+  align-self: center;
+}
+
+.list {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  margin-top: 6px;
+  font-size: 16px;
+}
+
+.openList {
+  max-height: 100px;
+}
+
+
+.list a {
+  text-decoration: none;
+  color: white;
+}
+
+.item {
+  margin: 6px 0;
+}
