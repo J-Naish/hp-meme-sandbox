@@ -9,7 +9,7 @@ function Plane({position, isDesktop=false}) {
       rotation={[-Math.PI / 2, 0, 0]}
       position={position}
     >
-      <planeGeometry args={[50, 50]} />
+      <planeGeometry args={[45, 18]} />
       {isDesktop ? (
       <MeshReflectorMaterial
         blur={[300, 100]}

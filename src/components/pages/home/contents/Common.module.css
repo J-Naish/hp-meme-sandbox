@@ -1,0 +1,21 @@
+/* desktop view */
+@media (min-width: 1025px) {
+  .title {
+    font-size: 48px;
+    margin-bottom: 8px;
+  }
+}
+/* tablet view */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .title {
+    font-size: 32px;
+    margin-bottom: 6px;
+  }
+}
+/* mobile view */
+@media (max-width: 480px) {
+  .title {
+    font-size: 20px;
+    margin-bottom: 4px;
+  }
+}
