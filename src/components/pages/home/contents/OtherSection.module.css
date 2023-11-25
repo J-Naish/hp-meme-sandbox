@@ -1,13 +1,12 @@
 /* common rules */
-.cardWrapper {
-  width: 600px;
-  height: 400px;
-}
 
 
 /* desktop */
 @media (min-width: 1025px) {
-
+  .cardWrapper {
+    width: 400px;
+    height: 260px;
+  }
 }
 
 

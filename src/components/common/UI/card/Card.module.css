@@ -3,29 +3,81 @@
 	width: 100%;
   height: 100%;
 	margin-inline: auto;
+  transition: filter 0.3s ease-in-out;
+
+  --degree: 71deg;
+}
+
+.card:hover {
+  filter: brightness(1.2);
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background: linear-gradient(var(--degree), var(--blackBlue), #b0afb0, var(--blackBlue));
 }
 
 .content {
+  width: 100%;
+  height: 100%;
   position: relative;
-  border: 2px solid transparent;
-  background: linear-gradient(71deg, #080509, #1a171c, #080509);
+  border: 1px solid transparent;
+  background: linear-gradient(var(--degree), #050206, #111012, #050206);
   background-clip: padding-box;
   border-radius: 20px;
-  padding: 40px;
+  transition: all 0.3s ease-in-out;
 }
 
-.whiteBoxBg {
-  position: relative;
+.head {
+  display: flex;
+  align-items: center;
 }
 
-.whiteBoxBg::after {
+.imageWrapper {
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 80%;
+  height: 80%;
+}
+
+.description {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.button {
   position: absolute;
-  top: -1px;
-  bottom: -1px;
-  left: -1px;
-  right: -1px;
-  content: "";
-  z-index: -1;
-  border-radius: 20px;
-  background: linear-gradient(71deg, var(--blackBlue), #b0afb0, var(--blackBlue));
+}
+
+@media screen and (min-width: 1025px) {
+  .content {
+    padding: 30px;
+  }
+  .head {
+    margin-left: 10px;
+  }
+  .title {
+    font-size: 28px;
+    margin-left: 16px;
+  }
+  .imageWrapper {
+    width: 60px;
+    height: 60px;
+  }
+  .description {
+    line-height: 30px;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  .button {
+    bottom: 20px;
+    right: 20px;
+  }
 }
