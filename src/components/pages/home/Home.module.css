@@ -3,6 +3,7 @@
   transition: background-color 0.5s ease;
   width: 100%;
   box-sizing: border-box;
+  margin-top: 100vh;
 }
 
 .bottom {
