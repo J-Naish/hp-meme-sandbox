@@ -3,6 +3,7 @@
 import styles from './Recruit.module.css';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import Background from '@/components/common/UI/background/Background';
 import { languageMapping } from './languageMapping.js';
 import RecruitList from './RecruitList.js';
 import { RecruitPositionEngineer, RecruitPositionMarketer, RecruitPositionDesigner } from './RecruitPosition.js';
@@ -14,6 +15,8 @@ export default function Recruit({ language }) {
   return (
     <>
       <div className={styles.container}>
+
+        <Background />
 
         <div className={styles.title}>
           <h1>Recruit</h1>

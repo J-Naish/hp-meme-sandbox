@@ -1,5 +1,7 @@
 import styles from './Info.module.css';
 
+import Background from '@/components/common/UI/background/Background';
+
 const languageMapping = {
   NAME: {
     en: "Company Name",
@@ -67,8 +69,9 @@ const languageMapping = {
 export default function Info({ language }) {
   return (
     <>
-
       <div className={styles.container}>
+
+        <Background />
 
         <div className={styles.wrapper}>
           <div className={styles.content}>

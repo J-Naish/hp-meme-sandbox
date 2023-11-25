@@ -2,6 +2,7 @@
 
 import styles from './Contact.module.css';
 import { useState } from 'react';
+import Background from '@/components/common/UI/background/Background';
 import ContactForm from './ContactForm.js';
 import StepProcessCircle from './StepProcessCircle.js';
 import ShareState from './ShareState.js';
@@ -35,6 +36,7 @@ export default function Contact({ language }) {
 
         <div className={styles.container}>
 
+          <Background />
 
           <div className={styles.titleContainer}>
 
