@@ -1,4 +1,9 @@
 /* common rules */
+.container {
+  background-color: black;
+  overflow: hidden;
+}
+
 .head {
   width: 100%;
   position: relative;
@@ -38,7 +43,7 @@
 @media (min-width: 1025px) {
 
   .container {
-    margin: 120px 0;
+    padding: 120px 0;
     --marginLeft: 120px;
   }
 
@@ -116,7 +121,7 @@
 @media (max-width: 1025px) and (min-width: 821px) {
 
   .container {
-    margin: 80px 0;
+    padding: 80px 0;
     --marginLeft: 60px;
   }
 
@@ -193,7 +198,7 @@
 @media (max-width: 820px) and (min-width: 481px) {
 
   .container {
-    margin: 70px 0;
+    padding: 70px 0;
     --marginLeft: 40px;
   }
 
@@ -273,7 +278,7 @@
 @media (max-width: 480px) {
 
   .container {
-    margin: 60px 0;
+    padding: 60px 0;
     --marginLeft: 16px;
   }
 
