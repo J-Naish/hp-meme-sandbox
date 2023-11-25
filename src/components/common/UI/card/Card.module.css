@@ -1,0 +1,31 @@
+.card {
+	border: 0;
+	width: 100%;
+  height: 100%;
+	margin-inline: auto;
+}
+
+.content {
+  position: relative;
+  border: 2px solid transparent;
+  background: linear-gradient(71deg, #080509, #1a171c, #080509);
+  background-clip: padding-box;
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.whiteBoxBg {
+  position: relative;
+}
+
+.whiteBoxBg::after {
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  content: "";
+  z-index: -1;
+  border-radius: 20px;
+  background: linear-gradient(71deg, var(--blackBlue), #b0afb0, var(--blackBlue));
+}

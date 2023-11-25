@@ -2,6 +2,65 @@ import styles from './Info.module.css';
 
 import Background from '@/components/common/UI/background/Background';
 
+
+export default function Info({ language }) {
+  return (
+    <>
+      <div className={styles.container}>
+
+        <Background />
+
+        <div className={styles.wrapper}>
+          <div className={styles.content}>
+            <div className={styles.title}>
+              <h1>Company Info</h1>
+            </div>
+            <CompanyInfoTable language={language} />
+          </div>
+        </div>
+
+      </div>
+
+    </>
+  );
+}
+
+
+// company info table
+function CompanyInfoTable({ language }) {
+  return (
+    <div className={styles.table}>
+      <div className={styles.tableItem}>
+        <div className={styles.leftTableItem}>{languageMapping.NAME[language]}</div>
+        <div className={styles.rightTableItem}>{languageMapping.name[language]}</div>
+      </div>
+      <div className={styles.tableItem}>
+        <div className={styles.leftTableItem}>{languageMapping.ESTABLISHED[language]}</div>
+        <div className={styles.rightTableItem}>{languageMapping.established[language]}</div>
+      </div>
+      <div className={styles.tableItem}>
+        <div className={styles.leftTableItem}>{languageMapping.LOCATION[language]}</div>
+        <div className={styles.rightTableItem}>{languageMapping.location[language]}</div>
+      </div>
+      <div className={styles.tableItem}>
+        <div className={styles.leftTableItem}>{languageMapping.REPRESENTATIVE[language]}</div>
+        <div className={styles.rightTableItem}>{languageMapping.representative[language]}</div>
+      </div>
+      <div className={styles.tableItem}>
+        <div className={styles.leftTableItem}>{languageMapping.CONTACT[language]}</div>
+        <div className={styles.rightTableItem}>{languageMapping.contact.email[language]}</div>
+      </div>
+      <div className={styles.tableItem}>
+        <div className={styles.leftTableItem}>{languageMapping.BUSINESS[language]}</div>
+        <div className={styles.rightTableItem}>{languageMapping.business.service1[language]}</div>
+      </div>
+      <div className={styles.tableItem}></div>
+    </div>
+  )
+}
+
+
+
 const languageMapping = {
   NAME: {
     en: "Company Name",
@@ -63,61 +122,4 @@ const languageMapping = {
       ja: "開発事業"
     },
   }
-}
-
-
-export default function Info({ language }) {
-  return (
-    <>
-      <div className={styles.container}>
-
-        <Background />
-
-        <div className={styles.wrapper}>
-          <div className={styles.content}>
-            <div className={styles.title}>
-              <h1>Company Info</h1>
-            </div>
-            <CompanyInfoTable language={language} />
-          </div>
-        </div>
-
-      </div>
-
-    </>
-  );
-}
-
-
-// company info table
-function CompanyInfoTable({ language }) {
-  return (
-    <div className={styles.table}>
-      <div className={styles.tableItem}>
-        <div className={styles.leftTableItem}>{languageMapping.NAME[language]}</div>
-        <div className={styles.rightTableItem}>{languageMapping.name[language]}</div>
-      </div>
-      <div className={styles.tableItem}>
-        <div className={styles.leftTableItem}>{languageMapping.ESTABLISHED[language]}</div>
-        <div className={styles.rightTableItem}>{languageMapping.established[language]}</div>
-      </div>
-      <div className={styles.tableItem}>
-        <div className={styles.leftTableItem}>{languageMapping.LOCATION[language]}</div>
-        <div className={styles.rightTableItem}>{languageMapping.location[language]}</div>
-      </div>
-      <div className={styles.tableItem}>
-        <div className={styles.leftTableItem}>{languageMapping.REPRESENTATIVE[language]}</div>
-        <div className={styles.rightTableItem}>{languageMapping.representative[language]}</div>
-      </div>
-      <div className={styles.tableItem}>
-        <div className={styles.leftTableItem}>{languageMapping.CONTACT[language]}</div>
-        <div className={styles.rightTableItem}>{languageMapping.contact.email[language]}</div>
-      </div>
-      <div className={styles.tableItem}>
-        <div className={styles.leftTableItem}>{languageMapping.BUSINESS[language]}</div>
-        <div className={styles.rightTableItem}>{languageMapping.business.service1[language]}</div>
-      </div>
-      <div className={styles.tableItem}></div>
-    </div>
-  )
 }
