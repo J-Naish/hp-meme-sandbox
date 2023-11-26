@@ -5,7 +5,7 @@
 .defaultButton {
   border: 1px solid white;
   cursor: pointer;
-  transition: background-color 0.5s ease, color 0.5s ease;
+  transition: all 0.5s ease, color 0.5s ease;
 }
 
 .container {
@@ -48,6 +48,7 @@
 .blackButton:hover {
   background-color: white;
   color: black;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
 }
 .whiteButton:hover {
   background-color: transparent;
