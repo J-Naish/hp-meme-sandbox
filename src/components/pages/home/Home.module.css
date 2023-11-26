@@ -1,6 +1,8 @@
 .content {
   background-color: var(--blackBackground);
-  transition: background-color 0.5s ease;
+  background-image: linear-gradient(rgba(30, 30, 40, 0.7) 1px, transparent 1px), linear-gradient(90deg, rgba(30, 30, 40, 0.7) 1px, transparent 1px);
+  background-size: 2em 2em;
+  transition: all 0.5s ease;
   width: 100%;
   box-sizing: border-box;
   margin-top: 100vh;
@@ -8,11 +10,12 @@
 
 .bottom {
   background-color: var(--blackBackground);
-  transition: background-color 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .content.reachedBottom, .bottom.reachedBottom{
   background-color: transparent !important;
+  background-image: none !important;
 }
 
 /* desktop */
