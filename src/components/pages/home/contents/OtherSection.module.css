@@ -1,23 +1,71 @@
 /* common rules */
+.cardWrapper {
+  position: relative;
+}
+
+.button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
 
-/* desktop */
-@media (min-width: 1025px) {
+@media (min-width: 1400px) {
+  .cardContainer {
+    display: flex;
+    justify-content: space-between;
+  }
   .cardWrapper {
-    width: 400px;
-    height: 260px;
+    width: 260px;
+    height: 300px;
+  }
+  .button {
+    bottom: 30px;
   }
 }
-
-
-/* tablet */
-@media (max-width: 1024px) and (min-width: 481px) {
-
+@media (max-width: 1399px) and (min-width: 700px) {
+  .cardContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    grid-gap: 40px;
+  }
+  .cardWrapper {
+    width: 260px;
+    height: 300px;
+  }
+  .button {
+    bottom: 30px;
+  }
 }
-
-
-/* mobile */
+@media (max-width: 699px) and (min-width: 481px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cardWrapper {
+    width: 360px;
+    height: 220px;
+    margin-bottom: 40px;
+  }
+  .button {
+    bottom: 24px;
+  }
+}
 @media (max-width: 480px) {
-
-
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cardWrapper {
+    width: 260px;
+    height: 200px;
+    margin-bottom: 30px;
+  }
+  .button {
+    bottom: 20px;
+  }
 }

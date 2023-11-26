@@ -161,6 +161,42 @@ export const languageMapping = {
         en: linkMap.contact.en,
         ja: linkMap.contact.ja
       }
+    },
+    item3: {
+      title: {
+        en: "News",
+        ja: "News"
+      },
+      description: {
+        en: "We update our activities at Meme from time to time.",
+        ja: "私たちMemeの活動を随時更新しています"
+      },
+      buttonLabel: {
+        en: "Learn More",
+        ja: "Learn More"
+      },
+      buttonLink: {
+        en: linkMap.news.en,
+        ja: linkMap.news.ja
+      }
+    },
+    item4: {
+      title: {
+        en: "Info",
+        ja: "Info"
+      },
+      description: {
+        en: "Check out our company information here.",
+        ja: "弊社Memeの会社情報はこちらからご確認ください"
+      },
+      buttonLabel: {
+        en: "Learn More",
+        ja: "Learn More"
+      },
+      buttonLink: {
+        en: linkMap.info.en,
+        ja: linkMap.info.ja
+      }
     }
   }
 }

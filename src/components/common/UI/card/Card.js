@@ -1,9 +1,8 @@
 import Image from "next/image";
 import styles from "./Card.module.css";
-import LinkButton from "@/components/common/UI/button/button";
 
 
-export default function Card({ title, description, imgLink,label, buttonLink }){
+export default function Card({ title, description, imgLink }){
   return(
     <div className={styles.card}>
       <div className={styles.wrapper}>
@@ -21,9 +20,6 @@ export default function Card({ title, description, imgLink,label, buttonLink }){
             <h4 className={styles.title}>{title}</h4>
           </div>
           <p className={styles.description}>{description}</p>
-          <div className={styles.button}>
-            <LinkButton label={label} link={buttonLink} />
-          </div>
         </div>
       </div>
     </div>
