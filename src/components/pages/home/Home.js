@@ -67,7 +67,7 @@ function HomeContent({ language }) {
             <ServiceSection language={language}/>
             <Spacer /><Spacer />
             <OtherSection language={language}/>
-            <Spacer /><Spacer />
+            <Spacer /><Spacer /><Spacer />
           </div>
         </div>
 
