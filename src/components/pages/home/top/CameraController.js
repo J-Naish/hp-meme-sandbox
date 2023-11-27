@@ -53,8 +53,8 @@ function CameraController() {
   const { camera } = useThree();
   const prevScrollY = useRef(scrollY);
 
-  const minRadius = 0.5;
-  const zoomFactor = 12;
+  const minRadius = 1;
+  const zoomFactor = 8;
 
   const cameraLerpFactor = 0.1;
 
