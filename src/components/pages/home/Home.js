@@ -65,13 +65,14 @@ function HomeContent({ language }) {
             <StrengthSection language={language}/>
             <Spacer />
             <ServiceSection language={language}/>
-            <Spacer />
+            <Spacer /><Spacer />
             <OtherSection language={language}/>
-            <Spacer /><Spacer /><Spacer />
-            <div className={`bottom ${isBottomReached ? styles.reachedBottom: ''} ${styles.bottom}`}>
-              <Bottom />
-            </div>
+            <Spacer /><Spacer />
           </div>
+        </div>
+
+        <div className={`bottom ${isBottomReached ? styles.reachedBottom: ''} ${styles.bottom}`}>
+          <Bottom />
         </div>
 
       </div>

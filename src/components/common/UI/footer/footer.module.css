@@ -1,7 +1,7 @@
 /* common rules */
 .container {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: black;
 }
 
 .head {

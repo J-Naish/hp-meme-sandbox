@@ -54,7 +54,7 @@ function CameraController() {
   const prevScrollY = useRef(scrollY);
 
   const minRadius = 0.5;
-  const zoomFactor = 20;
+  const zoomFactor = 12;
 
   const cameraLerpFactor = 0.1;
 

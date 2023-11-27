@@ -9,6 +9,8 @@
   position: relative;
   overflow-x: hidden;
   justify-content: center;
+  box-shadow: 0 0 0 20px white;
+  border-radius: 30px;
 }
 
 .slidingTextContainer {
