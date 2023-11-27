@@ -6,7 +6,7 @@ import Top from "./top/Top.js";
 import AboutMemeSection from "./contents/AboutMemeSection.js";
 import StrengthSection from "./contents/StrengthSection.js";
 import ServiceSection from "./contents/ServiceSection.js";
-import OtherSection from "./contents/OtherSection.js";
+import DiscoverSection from "./contents/DiscoverSection.js";
 import Spacer from "./contents/Spacer.js";
 import Bottom from "./bottom/Bottom.js";
 import Fade from "./Fade.js";
@@ -66,8 +66,8 @@ function HomeContent({ language }) {
             <Spacer />
             <ServiceSection language={language}/>
             <Spacer /><Spacer />
-            <OtherSection language={language}/>
-            <Spacer /><Spacer /><Spacer />
+            <DiscoverSection language={language}/>
+            <Spacer /><Spacer /><Spacer /><Spacer />
           </div>
         </div>
 

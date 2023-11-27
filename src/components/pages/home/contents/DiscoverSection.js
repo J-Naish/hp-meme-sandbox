@@ -1,6 +1,8 @@
-import styles from "./OtherSection.module.css";
+import styles from "./DiscoverSection.module.css";
+import commonStyles from "./Common.module.css";
 import Card from "@/components/common/UI/card/Card";
 import LinkButton from "@/components/common/UI/button/button";
+import BorderLine from '@/components/common/UI/line/BorderLine'
 import { languageMapping } from "./languageMapping";
 import recruitSymbol from "../../../../../public/images/recruit-symbol.webp";
 import contactSymbol from "../../../../../public/images/contact-symbol.webp";
@@ -9,9 +11,13 @@ import infoSymbol from "../../../../../public/images/info-symbol.webp";
 
 
 
-export default function OtherSection({ language }){
+export default function DiscoverSection({ language }){
   return (
     <div className={styles.container}>
+
+      <div className={commonStyles.title}><h1>Discover</h1></div>
+      <BorderLine />
+
       <div className={styles.cardContainer}>
         <Card1 language={language} />
         <Card2 language={language} />
