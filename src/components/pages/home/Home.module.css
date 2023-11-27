@@ -35,13 +35,13 @@
     padding: 0 10%;
   }
   .bottom {
-    border-top: 240px solid rgba(0, 0, 0, 0.95);
+    border-top: 120px solid rgba(0, 0, 0, 0.95);
     border-right: 240px solid rgba(0, 0, 0, 0.95);
     border-left: 240px solid rgba(0, 0, 0, 0.95);
     border-bottom: 240px solid rgba(0, 0, 0, 0.95);
   }
   .bottom.reachedBottom {
-    border-top: 240px solid white;
+    border-top: 120px solid white;
     border-right: 240px solid white;
     border-left: 240px solid white;
     border-bottom: 240px solid white;
@@ -53,11 +53,13 @@
     padding: 0 8%;
   }
   .bottom {
+    border-top: 840px solid rgba(0, 0, 0, 0.95);
     border-right: 80px solid rgba(0, 0, 0, 0.95);
     border-left: 80px solid rgba(0, 0, 0, 0.95);
     border-bottom: 80px solid rgba(0, 0, 0, 0.95);
   }
   .bottom.reachedBottom {
+    border-top: 40px solid white;
     border-right: 80px solid white;
     border-left: 80px solid white;
     border-bottom: 80px solid white;
@@ -69,11 +71,13 @@
     padding: 0 6%;
   }
   .bottom {
+    border-top: 20px solid rgba(0, 0, 0, 0.95);
     border-right: 40px solid rgba(0, 0, 0, 0.95);
     border-left: 40px solid rgba(0, 0, 0, 0.95);
     border-bottom: 40px solid rgba(0, 0, 0, 0.95);
   }
   .bottom.reachedBottom {
+    border-top: 20px solid white;
     border-right: 40px solid white;
     border-left: 40px solid white;
     border-bottom: 40px solid white;

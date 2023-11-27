@@ -1,5 +1,6 @@
 .container {
   width: 100%;
+  font-family: var(--font-bebas);
   color: white;
   text-shadow: white 1px 0 10px;
   background-position: center;
@@ -41,7 +42,7 @@
 @media (min-width: 1025px) {
 
   .container {
-    height: 85vh;
+    height: 70vh;
   }
 
   .slidingTextWrapper {

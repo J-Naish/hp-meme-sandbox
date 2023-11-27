@@ -25,6 +25,8 @@ body {
 
   --blackBlue: rgb(30, 30, 40);
 
+  font-family: var(--font-noto);
+
 }
 
 a {
