@@ -1,4 +1,4 @@
-import { Noto_Sans_JP, Inter, Bebas_Neue } from "next/font/google";
+import { Noto_Sans_JP, Bebas_Neue } from "next/font/google";
 
 import './globals.css';
 import Header from "@/components/common/UI/header/header";
@@ -9,13 +9,6 @@ const notojp = Noto_Sans_JP({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-noto",
-});
-
-const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter',
-  display: 'swap',
-  variable: '--font-inter',
 });
 
 const bebas = Bebas_Neue({
@@ -37,7 +30,7 @@ export const metadata = {
 export default function BaseLayout({ children, lang }) {
   return (
     <html lang={lang}>
-      <body className={`${notojp.variable} ${inter.variable} ${bebas.variable}`}>
+      <body className={`${notojp.variable} ${bebas.variable}`}>
         <Header language={lang} />
         {children}
         <Footer language={lang} />

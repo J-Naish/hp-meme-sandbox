@@ -3,6 +3,7 @@
 import styles from "./Home.module.css";
 import React, { useEffect } from 'react';
 import Top from "./top/Top.js";
+import MainSection from "./contents/MainSection.js";
 import AboutMemeSection from "./contents/AboutMemeSection.js";
 import StrengthSection from "./contents/StrengthSection.js";
 import ServiceSection from "./contents/ServiceSection.js";
@@ -58,8 +59,13 @@ function HomeContent({ language }) {
 
         <Top />
 
+        <div className={styles.mainSection}>
+        <MainSection language={language}/>
+        </div>
+
         <div className={`${styles.content} ${isBottomReached ? styles.reachedBottom : ''}`}>
           <div className={`${styles.mask} ${isBottomReached ? styles.reachedBottom : ''}`}>
+            <Spacer />
             <AboutMemeSection language={language}/>
             <Spacer />
             <StrengthSection language={language}/>
