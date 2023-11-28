@@ -1,5 +1,8 @@
 .container {
-  background: linear-gradient(45deg, rgba(20,20,20,1) 0%, rgba(0,0,0,1) 50%, rgba(20,20,20,1) 100%);
+  background: linear-gradient(45deg, rgba(30,30,30,1) 0%, rgba(0,0,0,1) 50%, rgba(30,30,30,1) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .title {
@@ -9,6 +12,22 @@
   background-size: 400%;
   animation: move 10s ease infinite;
   background-image: linear-gradient( 68.7deg,  rgba(29,173,235,1) 13.2%, rgba(137,149,250,1) 29.8%, rgba(229,109,212,1) 48.9%, rgba(255,68,128,1) 68.2%, rgba(255,94,0,1) 86.4% );
+}
+
+.scrollText {
+  color: rgba(255,255,255,0.6);
+  font-family: var(--font-bebas);
+}
+
+.scrollSymbol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.symbol {
+  margin: -4px 0;
 }
 
 @keyframes move {
@@ -22,56 +41,77 @@
 
 @media (min-width: 1025px) {
   .container {
-    padding: 80px 10%;
+    padding: 80px 10% 40px 10%;
   }
-  .title {
-    font-size: 80px;
-  }
-  .subtitle {
-    width: 520px;
-    font-size: 20px;
-    margin-top: 60px;
-  }
-  .button {
-    margin-top: 40px;
+  .scrollUI {
+    margin-top: 120px;
+    font-size: 32px;
   }
 }
 @media (max-width: 1024px) and (min-width: 480px) {
   .container {
-    padding: 60px 8%;
+    padding: 60px 8% 30px 8%;
   }
-  .subtitle {
-    width: 400px;
-    font-size: 18px;
-    margin-top: 50px;
-  }
-  .button {
-    margin-top: 30px;
-  }
-}
-@media (max-width: 1024px) and (min-width: 580px) {
-  .title {
-    font-size: 60px;
-  }
-}
-@media (max-width: 579px) and (min-width: 481px) {
-  .title {
-    font-size: 48px;
+  .scrollUI {
+    margin-top: 100px;
+    font-size: 28px;
   }
 }
 @media (max-width: 480px) {
   .container {
-    padding: 40px 6%;
+    padding: 40px 6% 20px 6%;
   }
+  .scrollUI {
+    margin-top: 40px;
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .title {
+    font-size: 140px;
+    margin: -40px 0;
+  }
+}
+@media (max-width: 1399px) and (min-width: 1180px) {
+  .title {
+    font-size: 120px;
+    margin: -30px 0;
+  }
+}
+@media (max-width: 1179px) and (min-width: 940px) {
+  .title {
+    font-size: 100px;
+    margin: -30px 0;
+  }
+}
+@media (max-width: 939px) and (min-width: 760px) {
+  .title {
+    font-size: 80px;
+    margin: -30px 0;
+  }
+}
+@media (max-width: 759px) and (min-width: 660px) {
+  .title {
+    font-size: 70px;
+    margin: -20px 0;
+  }
+}
+@media (max-width: 659px) and (min-width: 570px) {
+  .title {
+    font-size: 60px;
+    margin: -10px 0;
+  }
+}
+@media (max-width: 569px) and (min-width: 481px) {
+  .title {
+    font-size: 50px;
+    margin: -10px 0;
+  }
+}
+@media (max-width: 480px) {
   .title {
     font-size: 40px;
-  }
-  .subtitle {
-    width: 320px;
-    font-size: 16px;
-    margin-top: 40px;
-  }
-  .button {
-    margin-top: 20px;
+    margin: -10px 0;
   }
 }

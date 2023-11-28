@@ -1,21 +1,35 @@
+import Image from 'next/image';
 import styles from './MainSection.module.css';
-import LinkButton from '@/components/common/UI/button/button';
-import { linkMap } from '@/map/linkMap';
+import downwardSymbol from '../../../../../public/images/downward.webp';
+
 
 export default function MainSection({ language }) {
   return (
     <div className={styles.container}>
-      <h2 className={styles.title}>Craft and Design<br/>New-Dimension<br/>Digital Solutions</h2>
-      <p className={styles.subtitle}>{languageMapping.subtitle[language]}</p>
-      <div className={styles.button}><LinkButton label="Contact Us" link={linkMap.contact[language]} /></div>
+        <div className={styles.titleContainer}>
+          <h2 className={styles.title}>Craft and Design</h2>
+          <h2 className={styles.title}>New-Dimension</h2>
+          <h2 className={styles.title}>Digital Solutions</h2>
+        </div>
+        <div className={styles.scrollUI}>
+          <p className={styles.scrollText}>Scroll Down to See More</p>
+          <div className={styles.scrollSymbol}>
+            <Image
+              src={downwardSymbol}
+              alt="downward symbol for scroll"
+              width={15}
+              height={15}
+              className={styles.symbol}
+            />
+            <Image
+              src={downwardSymbol}
+              alt="downward symbol for scroll"
+              width={15}
+              height={15}
+              className={styles.symbol}
+            />
+          </div>
+        </div>
     </div>
   );
-}
-
-
-const languageMapping = {
-  subtitle: {
-    ja: "私たちMemeは、最先端の3D技術とSNSを用いたブランドマーケティングを通じて、サービスやプロダクトの価値を最大限まで高めるソリューションを提供します",
-    en: "We provide solutions that maximize the value of services and products through brand marketing using state-of-the-art 3D technology and social media."
-  }
 }
