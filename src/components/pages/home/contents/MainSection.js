@@ -15,8 +15,6 @@ export default function MainSection() {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           setHasReachedTitle(true);
-        } else {
-          setHasReachedTitle(false);
         }
       });
     });
