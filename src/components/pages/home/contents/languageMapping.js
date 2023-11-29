@@ -78,6 +78,10 @@ export const languageMapping = {
     }
   },
   strength: {
+    subtitle: {
+      en: "Our strength at Meme lies in three areas: marketing, development, and design.",
+      ja: "私たちMemeの強みはマーケティング・開発・デザインの３つの領域です"
+    },
     map: {
       item1: {
         title: {
@@ -111,17 +115,35 @@ export const languageMapping = {
       }
     },
     content: {
-      p1: {
-        en: "Our strengths at Meme lie in three core domains: Marketing, Development, and Design.",
-        ja: "Memeの強みは、マーケティング、開発、デザインの3つの領域です。"
+      item1: {
+        title: {
+          en: "Marketing",
+          ja: "Marketing"
+        },
+        description: {
+          en: "We specialize in brand marketing using SNS and web marketing using copywriting techniques.",
+          ja: "SNSを用いたブランドマーケティングや、コピーライティング技術を活用したWebマーケティングを得意としています。"
+        }
       },
-      p2: {
-        en: "In the realm of Marketing, we leverage social media for brand promotion. In the Development sector, we specialize in using 3D computer graphics for project creation. And in the Design sector, 3D computer graphics serve as an additional forte.",
-        ja: "マーケテイング分野ではSNSを用いたブランディング、開発分野では3DCGを用いた開発、デザイン分野では3DCGデザインをさらなる強みとしています。"
+      item2: {
+        title: {
+          en: "Development",
+          ja: "Development"
+        },
+        description: {
+          en: "We excel in developing 3D-related stuff. We're especially skilled in crafting web development and XR applications that incorporate 3D elements.",
+          ja: "3Dに関する開発を得意としています。その中でも特に3D要素を取り入れたWeb開発やXRアプリケーションの開発をさらに特化しています。"
+        }
       },
-      p3: {
-        en: "The synergy of these individual strengths enables the diverse ventures of Meme to unfold.",
-        ja: "それぞれの強みが重なり合うことによって、Memeの各事業が展開されています。"
+      item3: {
+        title: {
+          en: "Design",
+          ja: "Design"
+        },
+        description: {
+          en: "We're skilled in 3D object modeling, design, and VFX creation, along with traditional 2D areas like web design.",
+          ja: "3Dオブジェクトのモデリングやデザイン、VFXなどの3DCG製作に加え、Webデザインなどの従来の2D分野のデザインを得意としています。"
+        }
       }
     }
   },

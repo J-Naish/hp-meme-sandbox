@@ -1,13 +1,48 @@
 'use client';
 
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import styles from './StrengthSection.module.css';
 import commonStyles from './Common.module.css';
 import BorderLine from '@/components/common/UI/line/BorderLine'
 import { languageMapping } from './languageMapping';
+import SimpleCard from '@/components/common/UI/card/SimpleCard';
+import marketingSymbol from '../../../../../public/images/marketing-symbol.webp';
+import developmentSymbol from '../../../../../public/images/development-symbol.webp';
+import designSymbol from '../../../../../public/images/design-symbol.webp';
 
 
-function StrengthSection({ language }) {
+
+
+const marketingColor = "rgb(255,160,0)";
+const developmentColor = "rgb(29,173,235)";
+const designColor = "rgb(148,0,107)";
+
+
+export default function StrengthSection({ language }) {
+
+  const [isVisible, setIsVisible] = useState(false);
+  const subtitleRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsVisible(entry.isIntersecting);
+      },
+      { threshold: 0.1 }
+    );
+
+    if (subtitleRef.current) {
+      observer.observe(subtitleRef.current);
+    }
+
+    return () => {
+      if (subtitleRef.current) {
+        observer.unobserve(subtitleRef.current);
+      }
+    };
+  }, [subtitleRef]);
+
+
   return (
     <div className={styles.container}>
 
@@ -16,6 +51,10 @@ function StrengthSection({ language }) {
       </div>
 
       <BorderLine />
+
+      <div className={`${styles.subtitle} ${isVisible ? styles.visible : styles.invisible}`} ref={subtitleRef}>
+        <h3>{languageMapping.strength.subtitle[language]}</h3>
+      </div>
 
       <div className={styles.content}>
         <StrengthMap language={language}/>
@@ -35,20 +74,20 @@ function StrengthMap({ language }){
         <StrengthMapItem language={language}
           title={languageMapping.strength.map.item1.title[language]}
           list={languageMapping.strength.map.item1.lists[language]}
-          className1={styles.circle1}
-          className2={styles.item1}
+          className={styles.circle1}
+          color={marketingColor}
         />
         <StrengthMapItem language={language}
           title={languageMapping.strength.map.item2.title[language]}
           list={languageMapping.strength.map.item2.lists[language]}
-          className1={styles.circle2}
-          className2={styles.item2}
+          className={styles.circle2}
+          color={developmentColor}
         />
         <StrengthMapItem language={language}
           title={languageMapping.strength.map.item3.title[language]}
           list={languageMapping.strength.map.item3.lists[language]}
-          className1={styles.circle3}
-          className2={styles.item3}
+          className={styles.circle3}
+          color={designColor}
         />
       </div>
     </div>
@@ -56,7 +95,7 @@ function StrengthMap({ language }){
 }
 
 
-function StrengthMapItem({ title, list, className1, className2 }) {
+function StrengthMapItem({ title, list, className, color }) {
 
   const strengthCircleRef = useRef(null);
 
@@ -123,9 +162,15 @@ function StrengthMapItem({ title, list, className1, className2 }) {
 
   return (
 
-    <div className={`${styles.strengthMapItemContainer} ${className1}`}>
+    <div className={`${styles.strengthMapItemContainer} ${className}`}>
 
-      <div className={`${styles.strengthMapItemWrapper} ${className2}`} ref={strengthCircleRef}>
+      <div
+        className={styles.strengthMapItemWrapper}
+        ref={strengthCircleRef}
+        style={{
+          background: `radial-gradient(circle, ${color} 0%, rgba(0,0,0,1) 35%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.1) 75%, rgba(0,0,0,0) 100%)`
+        }}
+      >
 
         <div className={styles.strengthMapItem}>
           <div className={styles.strengthMapItemTitle}>
@@ -154,15 +199,30 @@ function StrengthMapItem({ title, list, className1, className2 }) {
 function Description({ language }) {
   return (
     <div className={styles.description}>
-      <p>{languageMapping.strength.content.p1[language]}</p>
-      <br></br>
-      <p>{languageMapping.strength.content.p2[language]}</p>
-      <br></br>
-      <p>{languageMapping.strength.content.p3[language]}</p>
+      <div className={styles.cardWrapper}>
+        <SimpleCard
+          title="Marketing"
+          imgUrl={marketingSymbol}
+          description={languageMapping.strength.content.item1.description[language]}
+          color={marketingColor}
+        />
+      </div>
+      <div className={styles.cardWrapper}>
+        <SimpleCard
+          title="Development"
+          imgUrl={developmentSymbol}
+          description={languageMapping.strength.content.item2.description[language]}
+          color={developmentColor}
+        />
+      </div>
+      <div className={styles.cardWrapper}>
+        <SimpleCard
+          title="Design"
+          imgUrl={designSymbol}
+          description={languageMapping.strength.content.item3.description[language]}
+          color={designColor}
+        />
+      </div>
     </div>
   );
 }
-
-
-
-export default StrengthSection;
