@@ -19,30 +19,6 @@ const designColor = "rgb(148,0,107)";
 
 
 export default function StrengthSection({ language }) {
-
-  const [isVisible, setIsVisible] = useState(false);
-  const subtitleRef = useRef(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        setIsVisible(entry.isIntersecting);
-      },
-      { threshold: 0.1 }
-    );
-
-    if (subtitleRef.current) {
-      observer.observe(subtitleRef.current);
-    }
-
-    return () => {
-      if (subtitleRef.current) {
-        observer.unobserve(subtitleRef.current);
-      }
-    };
-  }, [subtitleRef]);
-
-
   return (
     <div className={styles.container}>
 
@@ -52,7 +28,7 @@ export default function StrengthSection({ language }) {
 
       <BorderLine />
 
-      <div className={`${styles.subtitle} ${isVisible ? styles.visible : styles.invisible}`} ref={subtitleRef}>
+      <div className={styles.subtitle}>
         <h3>{languageMapping.strength.subtitle[language]}</h3>
       </div>
 
