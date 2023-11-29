@@ -2,7 +2,7 @@
 
 import styles from "./Top.module.css";
 import { Canvas } from '@react-three/fiber';
-import CustomEnvironment from '@/components/common/3D/environment/CustomEnvironment.js';
+import CustomEnvironment from './CustomEnvironment.js';
 import Objects from "./Objects.js";
 import CameraController from "./CameraController.js";
 import CameraControlUI from "./CameraControlUI.js";

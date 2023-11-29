@@ -1,9 +1,9 @@
 'use client';
 
-import EnvironmentMap from '../../../common/three-d/environment/EnvironmentMap.js';
+import EnvironmentMap from '@/components/common/3D/environment/EnvironmentMap.js';
 
 
-function CustomEnvironment() {
+export default function CustomEnvironment() {
   return(
     <>
       <EnvironmentMap isDark={true} />
@@ -12,6 +12,3 @@ function CustomEnvironment() {
     </>
   );
 }
-
-
-export default CustomEnvironment;
