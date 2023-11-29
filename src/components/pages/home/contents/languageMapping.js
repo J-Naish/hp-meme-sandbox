@@ -85,8 +85,8 @@ export const languageMapping = {
           ja: "マーケティング"
         },
         lists: {
-          en: ["- Social Media", "- Branding", "- Copywriting"],
-          ja: ["- Social Media", "- Branding", "- Copywriting"]
+          en: ["Social Media", "Brand Marketing", "Copywriting"],
+          ja: ["SNS Marketing", "Brand Marketing", "Copywriting"]
         }
       },
       item2: {
@@ -95,8 +95,8 @@ export const languageMapping = {
           ja: "開発"
         },
         lists: {
-          en: ["- Web 3D", "- XR App", "- 3D Game"],
-          ja: ["- Web 3D", "- XR App", "- 3D Game"]
+          en: ["Web XR", "XR App", "3D Game"],
+          ja: ["Web XR", "XR App", "3D Game"]
         }
       },
       item3: {
@@ -105,8 +105,8 @@ export const languageMapping = {
           ja: "デザイン"
         },
         lists: {
-          en: ["- 2D Design", "- 3D Modeling", "- 3D Effect"],
-          ja: ["- 2D Design", "- 3D Modeling", "- 3D Effect"],
+          en: ["3DCG Design", "VFX Design", "2D Design"],
+          ja: ["3DCG Design", "VFX Design", "2D Design"],
         }
       }
     },
