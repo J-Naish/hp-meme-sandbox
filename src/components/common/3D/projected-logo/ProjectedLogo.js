@@ -9,8 +9,8 @@ function ProjectedLogo({ position, scale }) {
   return (
     <>
       <group position={position} scale={scale}>
-        <rectAreaLight position={[0, 2.2, 0]} rotation={[-Math.PI / 2, 0, 0]} intensity={3} width={1.5} height={1.5} />
-        <rectAreaLight position={[0, 0.6, 0]} rotation={[Math.PI / 2, 0, 0]} intensity={3} width={1.5} height={1.5} />
+        <rectAreaLight position={[0, 2.2, 0]} rotation={[-Math.PI / 2, 0, 0]} intensity={2} width={1} height={1} />
+        <rectAreaLight position={[0, 0.6, 0]} rotation={[Math.PI / 2, 0, 0]} intensity={2} width={1} height={1} />
         <Projector />
         <MemeLogo position={[0, 1.45, 0]} scale={[0.08, 0.08, 0.08]} />
       </group>
