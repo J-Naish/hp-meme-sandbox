@@ -60,7 +60,7 @@ function HomeContent({ language }) {
         <Top />
 
         <div className={styles.mainSection}>
-        <MainSection language={language}/>
+        <MainSection />
         </div>
 
         <div className={`${styles.content} ${isBottomReached ? styles.reachedBottom : ''}`}>
