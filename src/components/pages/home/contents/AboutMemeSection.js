@@ -1,10 +1,12 @@
 import styles from "./AboutMemeSection.module.css";
 import commonStyles from "./Common.module.css";
-import LinkButton from '@/components/common/UI/button/button'
-import BorderLine from '@/components/common/UI/line/BorderLine'
+import LinkButton from '@/components/common/UI/button/button';
+import BorderLine from '@/components/common/UI/line/BorderLine';
+import Panel from '@/components/common/UI/card/Panel';
 import { languageMapping } from "./languageMapping";
-
-
+import missionSymbol from '../../../../../public/images/mission.webp';
+import visionSymbol from '../../../../../public/images/vision.webp';
+import valueSymbol from '../../../../../public/images/value.webp';
 
 // about meme section
 function AboutMemeSection({ language }) {
@@ -17,7 +19,9 @@ function AboutMemeSection({ language }) {
 
       <BorderLine />
 
+
       <Content language={language} />
+
 
       <div className={styles.buttonContainer}>
         <LinkButton
@@ -32,12 +36,30 @@ function AboutMemeSection({ language }) {
 
 
 
-function Content({ language }){
+function Content({ language }) {
   return (
     <div className={styles.content}>
-      <p>{languageMapping.aboutMeme.content.p1[language]}</p>
-      <br></br><br></br>
-      <p>{languageMapping.aboutMeme.content.p2[language]}</p>
+      <div className={styles.panelWrapper}>
+        <Panel
+          title="Mission"
+          imgUrl={missionSymbol}
+          text={languageMapping.aboutMeme.content.mission[language]}
+        />
+      </div>
+      <div className={styles.panelWrapper}>
+        <Panel
+          title="Vision"
+          imgUrl={visionSymbol}
+          text={languageMapping.aboutMeme.content.vision[language]}
+        />
+      </div>
+      <div className={styles.panelWrapper}>
+        <Panel
+          title="Value"
+          imgUrl={valueSymbol}
+          text={languageMapping.aboutMeme.content.value[language]}
+        />
+      </div>
     </div>
   )
 }

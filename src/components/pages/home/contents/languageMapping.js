@@ -67,13 +67,17 @@ export const languageMapping = {
       }
     },
     content: {
-      p1: {
-        en: "We at Meme envision a future where individuals and teams with killer vibes can totally rock their unique personalities in virtual 3D worlds.",
-        ja: "私たちMemeは、魅力的な個性を持った個人やチームがバーチャル3D空間でその個性を全世界に発揮できるような未来を創造することをビジョンとしています。"
+      mission: {
+        en: "We create a world where everyone can deliver their strengths and individuality to the world in virtual 3D space.",
+        ja: "全ての人や組織がその強みや個性をバーチャル3D空間で世の中に届けられるような世界を創る"
       },
-      p2: {
-        en: "To make that happen, we offer next-level solutions for maximizing brand messaging through 3D tech and social media marketing. We're all about amplifying the impact of services, products, and brands to the max.",
-        ja: "そのために私たちは、3DテクノロジーとSNSを用いたブランドマーケティングによって、サービスやプロダクト、ブランドの訴求を最大限まで高めるためのソリューションを提供しています"
+      vision: {
+        en: "We use 3D technology and SNS to present the unique charm of individuals and teams in a new way.",
+        ja: "3D技術とSNSを用いて個人やチームの独自の魅力を新しいカタチで提示する"
+      },
+      value: {
+        en: "We always consider the customer's needs and strive to find the best solution.",
+        ja: "顧客のニーズを第一に考え最適なソリューションを常に模索し続ける"
       }
     }
   },
