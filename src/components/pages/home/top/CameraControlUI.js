@@ -62,7 +62,14 @@ function CameraControlUI() {
   const [lineAmount, setLineAmount] = useState(30);
 
   const lines = useMemo(() => Array.from({ length: lineAmount }, (_, index) => (
-    <div key={index} className={styles.line}></div>
+    <div
+      key={index}
+      className={styles.line}
+      style={{
+        height: `${index % 5 === 0 ? "10px" : "6px"}`,
+      }}
+    >
+    </div>
   )), [lineAmount]);
 
 
