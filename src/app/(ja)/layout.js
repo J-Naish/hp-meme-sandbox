@@ -2,7 +2,7 @@ import BaseLayout from "../base-layout";
 
 export const metadata = {
   title: 'Meme',
-  description: 'The official website of Meme, LLC.',
+  description: '合同会社Memeオフィシャルコーポレートサイト',
 }
 
 export default function RootLayout({ children }) {
