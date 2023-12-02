@@ -30,11 +30,11 @@ function CameraControlUI() {
     if (isDesktopView) {
       const newText = textUI.replace("Tap", "Click");
       setTextUI(newText); // update number of lines for slider
-      setLineAmount(100);
+      setLineAmount(101);
     } else {
       const newText = textUI.replace("Click", "Tap");
       setTextUI(newText);
-      setLineAmount(50); // update number of lines for slider
+      setLineAmount(51); // update number of lines for slider
     }
   }, [textUI, isDesktopView]);
 
@@ -58,8 +58,7 @@ function CameraControlUI() {
   }, []);
 
 
-
-  const [lineAmount, setLineAmount] = useState(30);
+  const [lineAmount, setLineAmount] = useState(31);
 
   const lines = useMemo(() => Array.from({ length: lineAmount }, (_, index) => (
     <div
@@ -67,6 +66,7 @@ function CameraControlUI() {
       className={styles.line}
       style={{
         height: `${index % 5 === 0 ? "10px" : "6px"}`,
+        backgroundColor: `${index % 5 === 0 ? "#fff" : "#aaa"}`,
       }}
     >
     </div>
