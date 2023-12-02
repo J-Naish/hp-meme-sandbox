@@ -32,7 +32,9 @@ export default function BaseLayout({ children, lang }) {
     <html lang={lang}>
       <body className={`${notojp.variable} ${bebas.variable}`}>
         <Header language={lang} />
-        {children}
+        <main>
+          {children}
+        </main>
         <Footer language={lang} />
       </body>
     </html>
