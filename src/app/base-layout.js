@@ -20,13 +20,6 @@ const bebas = Bebas_Neue({
 
 
 
-export const metadata = {
-  title: 'Meme',
-  description: 'The official website of Meme, LLC.',
-}
-
-
-
 export default function BaseLayout({ children, lang }) {
   return (
     <html lang={lang}>
