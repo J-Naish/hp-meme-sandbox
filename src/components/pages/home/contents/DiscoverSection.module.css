@@ -42,13 +42,11 @@
   }
 }
 @media (max-width: 699px) and (min-width: 481px) {
-  .container {
+  .cardContainer {
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .cardContainer {
-    margin-top: 100px;
   }
   .cardWrapper {
     width: 360px;
@@ -60,13 +58,11 @@
   }
 }
 @media (max-width: 480px) {
-  .container {
+  .cardContainer {
+    margin-top: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .cardContainer {
-    margin-top: 80px;
   }
   .cardWrapper {
     width: 260px;
