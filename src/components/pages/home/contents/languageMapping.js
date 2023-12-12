@@ -15,8 +15,8 @@ export const languageMapping = {
       ja: "3D Art × Technology × Marketing"
     },
     description: {
-      en: "We leverage cutting-edge 3D graphics and AI to operate virtual influencers across various social media platforms. Our strengths in 3D graphics production, AI technology, 3D-driven development, and brand marketing through social media all come together in what feels like the culmination of our expertise.",
-      ja: "最先端の3DCG技術やAIを用いてバーチャルなインフルエンサーを各種SNSプラットフォームで運用しています。私たちが強みとする3DCG製作やAI技術、3Dを用いた開発、そしてSNSを活用したブランドマーケティング、それら全てが融合した集大成のような事業です。"
+      en: "We operate virtual influencers on various SNS platforms using cutting-edge 3DCG technology and AI.",
+      ja: "最先端の3DCG技術やAIを用いてバーチャルなインフルエンサーを各種SNSプラットフォームで運用しています。"
     }
   },
   parallel: {
@@ -33,8 +33,8 @@ export const languageMapping = {
       ja: "Development × 3DCG"
     },
     description: {
-      en: "We develop web experiences with 3D elements like this website, as well as XR applications, 3D mobile apps, and 3D games. From initial concept and planning to 3D graphics creation and application development, we handle every step of the process seamlessly.",
-      ja: "本ホームページのような3Dを用いたWeb開発、XRアプリケーション開発、3Dモバイルアプリ開発、3Dゲームの開発をしています。企画立案に始まり、3DCGの製作・アプリケーション開発までのを全ての工程を行えます。"
+      en: "We develop web applications, XR applications, 3D mobile applications, and 3D games using 3DCG.",
+      ja: "3DCGを用いたWeb開発、XRアプリ開発、3Dモバイルアプリ開発、3Dゲームの開発をしています。"
     }
   },
   shefla: {
@@ -51,8 +51,8 @@ export const languageMapping = {
       ja: "Brand Marketing × SNS Marketing"
     },
     description: {
-      en: "Our elite marketing team, specialized in social media, collaborates to maximize your influence and revenue on social media platforms. With not only marketers but also designers on board, we can build everything from scratch to fully leverage social media.",
-      ja: "SNSに特化した精鋭のマーケティングチームが協業体制を敷き、SNSでの影響力を発揮し売上を最大化させます。マーケッターだけでなくデザイナーもチームに加わっているため、SNSを活用してく上での全てを０から構築していくことができます。"
+      en: "We have an elite marketing team that works together to support branding and maximize sales using SNS.",
+      ja: "精鋭のマーケティングチームが協業体制を敷き、SNSを用いたブランディングや売上の最大化を支援します。"
     }
   },
   aboutMeme: {

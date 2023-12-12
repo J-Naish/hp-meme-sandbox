@@ -1,0 +1,58 @@
+.container {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(71deg, var(--blackBlue), #b0afb0, var(--blackBlue));
+  border-radius: 16px;
+}
+
+.mask {
+  padding: 10%;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.symbol {
+  width: 30%;
+  aspect-ratio: 1/1;
+}
+
+.description {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@media screen and (min-width: 1025px) {
+  .title {
+    font-size: 24px;
+  }
+  .description {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  .button {
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 481px) {
+  .title {
+    font-size: 22px;
+  }
+  .description {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 20px;
+  }
+  .description {
+    font-size: 14px;
+  }
+}
