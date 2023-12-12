@@ -7,10 +7,10 @@ import styles from './ImmersiveCard.module.css'
 import LinkButton from '@/components/common/UI/button/button'
 
 
-export default function ImmersiveCard({ imgUrl, title, description, link }) {
+export default function ImmersiveCard({ imgUrl, title, description, link, color }) {
   return (
-    <div className={styles.container}>
-      <div className={styles.mask}>
+    <div className={styles.container} style={{background: `linear-gradient(71deg, #050206, ${color}, #050206)`}}>
+      <div className={styles.mask} style={{boxShadow: `0 0 10px ${color}`}}>
         <div className={styles.symbol}>
           <Image
             src={imgUrl}
