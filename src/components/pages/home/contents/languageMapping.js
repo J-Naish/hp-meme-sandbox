@@ -51,8 +51,8 @@ export const languageMapping = {
       ja: "Brand Marketing × SNS Marketing"
     },
     description: {
-      en: "We have an elite marketing team that works together to support branding and maximize sales using SNS.",
-      ja: "精鋭のマーケティングチームが協業体制を敷き、SNSを用いたブランディングや売上の最大化を支援します。"
+      en: "We have an elite SNS operation team and a cooperative system to support branding and maximizing sales using SNS.",
+      ja: "精鋭のSNS運用チームが協業体制を敷き、SNSを用いたブランディングや売上の最大化を支援します。"
     }
   },
   aboutMeme: {
