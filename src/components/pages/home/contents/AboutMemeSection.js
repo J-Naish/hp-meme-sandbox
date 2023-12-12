@@ -35,6 +35,7 @@ function AboutMemeSection({ language }) {
 }
 
 
+const color = "linear-gradient(315deg, rgba(255,160,0,1) 0%, rgba(148,0,107,1) 50%, rgba(29,173,235,1) 100%)";
 
 function Content({ language }) {
   return (
@@ -44,7 +45,7 @@ function Content({ language }) {
           title="Mission"
           imgUrl={missionSymbol}
           text={languageMapping.aboutMeme.content.mission[language]}
-          color="linear-gradient(315deg, rgba(3,169,244,1) 0%, rgba(255,0,88,1) 100%)"
+          color={color}
         />
       </div>
       <div className={styles.panelWrapper}>
@@ -52,7 +53,7 @@ function Content({ language }) {
           title="Vision"
           imgUrl={visionSymbol}
           text={languageMapping.aboutMeme.content.vision[language]}
-          color="linear-gradient(315deg, rgba(77,24,155,1) 0%, rgba(9,211,173,1) 100%)"
+          color={color}
         />
       </div>
       <div className={styles.panelWrapper}>
@@ -60,7 +61,7 @@ function Content({ language }) {
           title="Value"
           imgUrl={valueSymbol}
           text={languageMapping.aboutMeme.content.value[language]}
-          color="linear-gradient(315deg, rgba(208,50,237,1) 0%, rgba(255,160,0,1) 100%)"
+          color={color}
         />
       </div>
     </div>
