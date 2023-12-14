@@ -1,13 +1,14 @@
 'use client';
 
-import Image from 'next/image'
+import Image from 'next/image';
 import { useRouter } from 'next/navigation';
-import { useState, useRef, useEffect } from 'react'
-import { Canvas, useFrame } from '@react-three/fiber'
-import styles from './ImmersiveCard.module.css'
+import { useState, useRef, useEffect } from 'react';
+import { Canvas, useFrame } from '@react-three/fiber';
+import styles from './ImmersiveCard.module.css';
 import Glb from '@/components/common/3D/glb/Glb.js';
 import Lighting from '@/components/common/3D/lighting/Lighting.js';
 import EnvironmentMap from '@/components/common/3D/environment/EnvironmentMap.js'
+import LinkButton from '@/components/common/UI/button/button.js';
 
 
 export default function ImmersiveCard({ imgUrl, title, description, color, glbUrl, link }) {
@@ -65,14 +66,21 @@ export default function ImmersiveCard({ imgUrl, title, description, color, glbUr
       </div>
 
 
-      <div className={styles.canvasWrapper}>
-      {is3dActive && (
-      <Canvas className={styles.canvas}>
-        <CustomGlb glbUrl={glbUrl} scale={1} link={link}/>
-        <Lighting intensity={4} />
-        <EnvironmentMap isBright={true} />
-      </Canvas>
-      )}
+      <div className={styles.canvasContainer}>
+        <div className={styles.canvasWrapper}>
+        {is3dActive && (
+        <>
+          <Canvas className={styles.canvas}>
+            <CustomGlb glbUrl={glbUrl} scale={1}/>
+            <Lighting intensity={4} />
+            <EnvironmentMap isBright={true} />
+          </Canvas>
+          <div className={styles.buttonWrapper}>
+            <LinkButton label="Learn More" link={link} />
+          </div>
+        </>
+        )}
+        </div>
       </div>
 
     </div>
@@ -80,7 +88,7 @@ export default function ImmersiveCard({ imgUrl, title, description, color, glbUr
 }
 
 
-function CustomGlb({ glbUrl, scale, link }) {
+function CustomGlb({ glbUrl, scale }) {
 
   const groupRef = useRef();
 
@@ -91,10 +99,6 @@ function CustomGlb({ glbUrl, scale, link }) {
     groupRef.current.rotation.y += 0.005;
   });
 
-  const router = useRouter();
-  const handleModelClick = () => {
-    router.push(link);
-  }
 
   return(
     <Glb
@@ -102,7 +106,6 @@ function CustomGlb({ glbUrl, scale, link }) {
       groupRef={groupRef}
       position={[0, 0, 0]}
       scale={scale}
-      onClick={handleModelClick}
     />
   );
 }
