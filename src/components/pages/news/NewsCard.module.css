@@ -1,0 +1,125 @@
+.container {
+  border: 2px solid rgba(100, 100, 100, 0.7);
+  transition: border 0.3s ease-in-out;
+}
+
+.container:hover {
+  border: 2px solid rgba(100, 100, 100, 1);
+}
+
+.date {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+
+@media (min-width: 1025px) {
+
+  .container {
+    border-radius: 16px;
+    width: 400px;
+    height: 480px;
+    padding: 30px 20px;
+  }
+
+  .head {
+    margin-bottom: 20px;
+  }
+  
+  .title {
+    height: 80px;
+    font-size: 24px;
+  }
+
+  .date {
+    font-size: 14px;
+  }
+
+  .imageWrapper {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 40px;
+  }
+
+  .image {
+    object-fit: fill;
+    border-radius: 6px;
+  }
+
+}
+
+
+@media (max-width: 1024px) and (min-width: 481px) {
+
+  .container {
+    border-radius: 14px;
+    width: 240px;
+    height: 320px;
+    padding: 20px 16px;
+  }
+
+  .head {
+    margin-bottom: 12px;
+  }
+
+  .title {
+    height: 60px;
+    font-size: 20px;
+  }
+
+  .date {
+    font-size: 12px;
+  }
+
+  .imageWrapper {
+    width: 100%;
+    height: 120px;
+    margin-bottom: 20px;
+  }
+
+  .image {
+    object-fit: fill;
+    border-radius: 4px;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  .container {
+    border-radius: 14px;
+    width: 240px;
+    height: 320px;
+    padding: 20px 16px;
+  }
+
+  .head {
+    margin-bottom: 12px;
+  }
+
+  .title {
+    height: 60px;
+    font-size: 20px;
+  }
+
+  .date {
+    font-size: 12px;
+  }
+
+  .imageWrapper {
+    width: 100%;
+    height: 120px;
+    margin-bottom: 20px;
+  }
+
+  .image {
+    object-fit: fill;
+    border-radius: 4px;
+  }
+
+}

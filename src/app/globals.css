@@ -33,3 +33,25 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+
+
+.pageTitle {
+  font-family: var(--font-bebas);
+}
+
+@media (min-width: 1025px) {
+  .pageTitle {
+    font-size: 60px;
+  }
+}
+@media (max-width: 1024px) and (min-width: 481px) {
+  .pageTitle {
+    font-size: 40px;
+  }
+}
+@media (max-width: 480px) {
+  .pageTitle {
+    font-size: 30px;
+  }
+}
