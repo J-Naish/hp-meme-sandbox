@@ -27,8 +27,14 @@
 
 
 .bottom {
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.95);
   filter: brightness(1.9);
-  transition: all 0.4s ease;
+  transition: border-color 0.3s ease;
+}
+
+.bottom.reachedBottom {
+  border-color: white;
 }
 
 
@@ -38,16 +44,7 @@
     padding: 0 10%;
   }
   .bottom {
-    border-top: 120px solid rgba(0, 0, 0, 0.95);
-    border-right: 240px solid rgba(0, 0, 0, 0.95);
-    border-left: 240px solid rgba(0, 0, 0, 0.95);
-    border-bottom: 240px solid rgba(0, 0, 0, 0.95);
-  }
-  .bottom.reachedBottom {
-    border-top: 120px solid white;
-    border-right: 240px solid white;
-    border-left: 240px solid white;
-    border-bottom: 240px solid white;
+    border-width: 120px 240px 200px 240px;
   }
 }
 /* tablet */
@@ -56,16 +53,7 @@
     padding: 0 8%;
   }
   .bottom {
-    border-top: 840px solid rgba(0, 0, 0, 0.95);
-    border-right: 80px solid rgba(0, 0, 0, 0.95);
-    border-left: 80px solid rgba(0, 0, 0, 0.95);
-    border-bottom: 80px solid rgba(0, 0, 0, 0.95);
-  }
-  .bottom.reachedBottom {
-    border-top: 40px solid white;
-    border-right: 80px solid white;
-    border-left: 80px solid white;
-    border-bottom: 80px solid white;
+    border-width: 40px 80px 100px 80px;
   }
 }
 /* mobile */
@@ -74,15 +62,6 @@
     padding: 0 6%;
   }
   .bottom {
-    border-top: 20px solid rgba(0, 0, 0, 0.95);
-    border-right: 40px solid rgba(0, 0, 0, 0.95);
-    border-left: 40px solid rgba(0, 0, 0, 0.95);
-    border-bottom: 40px solid rgba(0, 0, 0, 0.95);
-  }
-  .bottom.reachedBottom {
-    border-top: 20px solid white;
-    border-right: 40px solid white;
-    border-left: 40px solid white;
-    border-bottom: 40px solid white;
+    border-width: 20px 40px 60px 40px;
   }
 }
