@@ -9,17 +9,11 @@
   box-sizing: border-box;
 }
 
-.content, .mask {
+.content {
   transition: all 0.5s ease;
 }
 
-.mask {
-  width: 100%;
-  height: 100%;
-}
-
-.content.reachedBottom, .mask.reachedBottom {
-  background-image: none !important;
+.content.reachedBottom {
   background-color: white !important;
 }
 
@@ -38,7 +32,7 @@
 
 /* desktop */
 @media (min-width: 1025px) {
-  .mask {
+  .content {
     padding: 0 10%;
   }
   .bottom {
@@ -47,7 +41,7 @@
 }
 /* tablet */
 @media (max-width: 1024px) and (min-width: 481px) {
-  .mask {
+  .content {
     padding: 0 8%;
   }
   .bottom {
@@ -56,7 +50,7 @@
 }
 /* mobile */
 @media (max-width: 480px) {
-  .mask {
+  .content {
     padding: 0 6%;
   }
   .bottom {

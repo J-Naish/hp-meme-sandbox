@@ -60,21 +60,19 @@ function HomeContent({ language }) {
         <Top />
 
         <div className={styles.mainSection}>
-        <MainSection />
+          <MainSection />
         </div>
 
         <div className={`${styles.content} ${isBottomReached ? styles.reachedBottom : ''}`}>
-          <div className={`${styles.mask} ${isBottomReached ? styles.reachedBottom : ''}`}>
-            <Spacer />
-            <AboutMemeSection language={language}/>
-            <Spacer />
-            <StrengthSection language={language}/>
-            <Spacer />
-            <ServiceSection language={language}/>
-            <Spacer /><Spacer />
-            <DiscoverSection language={language}/>
-            <Spacer /><Spacer /><Spacer /><Spacer />
-          </div>
+          <Spacer />
+          <AboutMemeSection language={language}/>
+          <Spacer />
+          <StrengthSection language={language}/>
+          <Spacer />
+          <ServiceSection language={language}/>
+          <Spacer /><Spacer />
+          <DiscoverSection language={language}/>
+          <Spacer /><Spacer /><Spacer /><Spacer />
         </div>
 
         <div className={`bottom ${isBottomReached ? styles.reachedBottom: ''} ${styles.bottom}`}>
