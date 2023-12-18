@@ -1,9 +1,5 @@
 .container {
   width: 100%;
-  font-family: var(--font-bebas);
-  -webkit-text-stroke: 4px white;
-  color: transparent;
-  /* text-shadow: white 1px 0 10px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,6 +21,12 @@
   display: flex;
   white-space: nowrap;
   animation: slide 30s linear infinite;
+}
+
+.slidingText {
+  font-family: var(--font-bebas);
+  color: black;
+  -webkit-text-stroke: 3px white;
 }
 
 @keyframes slide {
