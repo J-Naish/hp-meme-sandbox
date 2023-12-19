@@ -15,6 +15,9 @@ export default function NewsCard({ title, imageLink, date, id }) {
           <Image
             src={imageLink}
             alt={`image for the news of ${title}`}
+            unoptimized={true}
+            width={100}
+            height={100}
             style={{ width: "100%", height: "100%" }}
             className={styles.image}
           />

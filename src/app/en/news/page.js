@@ -1,7 +1,7 @@
-
+import News from "@/components/pages/news/News"
 
 export default function Page() {
   return (
-    <div></div>
+    <News language="en" />
   )
 }

@@ -1,7 +1,7 @@
 import styles from "./News.module.css";
 import Background from "@/components/common/UI/background/Background";
 import NewsCard from "./NewsCard.js";
-import tempImg from "../../../../public/images/info-display.jpg";
+import { getNewsData } from "./getNewsData.js";
 
 
 // define number for each language to get news data from database
@@ -11,33 +11,44 @@ const enNumber = 2;
 // table names in database
 const table1 = "list";
 const table2 = "title";
-const table3 = "description";
-
-
-// function for getting news data from database
-async function getNewsData(tableName) {
-
-  const url = process.env.NEXT_PUBLIC_GOOGLE_SHEETS_URL;
-  const key = process.env.NEXT_PUBLIC_GOOGLE_SHEETS_API_KEY;
-
-  // api url
-  const api = `${url}${tableName}?key=${key}`;
-
-  // get news data
-  if (!api) throw new Error("URL is undefined");
-  const res = await fetch(api);
-  return res.json();
-}
-
 
 
 // React component for news page
-export default async function News() {
+export default async function News({ language }) {
 
   // get news data from database
-  const data = await getNewsData(table1);
-  // abstract necessary data
-  const newsData = data["values"];
+  const list = await getNewsData(table1);
+  // abstract necessary data and reverse the order
+  const newsList = list["values"].reverse();
+
+  // column number for the "list" table
+  const idColumn = 0;
+  const dateColumn = 1;
+  const imageColumn = 2;
+
+  // get each column data from the list
+  const ids = newsList.map((news) => news[idColumn]);
+  const dates = newsList.map((news) => news[dateColumn]);
+  const images = newsList.map((news) => news[imageColumn]);
+
+  //remove the last elements of each array
+  // because the last element is just a column name
+  ids.pop();
+  dates.pop();
+  images.pop();
+
+  // define number of column of language
+  const languageNumber = language === "en" ? enNumber : jaNumber;
+
+  // get news titles
+  const title = await getNewsData(table2);
+  const newsTitle = title["values"].reverse();
+
+  // get news titles
+  const titles = newsTitle.map((title) => title[languageNumber]);
+  titles.pop();
+
+
 
   return (
     <div className={styles.container}>
@@ -49,54 +60,16 @@ export default async function News() {
       </div>
       <div className={styles.body}>
         <div className={styles.newsContainer}>
-          <div className={styles.newsCard}>
-            <NewsCard
-              title="temp"
-              imageLink={tempImg}
-              date="2021/08/01"
-              id="1"
-            />
-          </div>
-          <div className={styles.newsCard}>
-            <NewsCard
-              title="temp"
-              imageLink={tempImg}
-              date="2021/08/01"
-              id="2"
-            />
-          </div>
-          <div className={styles.newsCard}>
-            <NewsCard
-              title="temp"
-              imageLink={tempImg}
-              date="2021/08/01"
-              id="3"
-            />
-          </div>
-          <div className={styles.newsCard}>
-            <NewsCard
-              title="temp"
-              imageLink={tempImg}
-              date="2021/08/01"
-              id="4"
-            />
-          </div>
-          <div className={styles.newsCard}>
-            <NewsCard
-              title="temp"
-              imageLink={tempImg}
-              date="2021/08/01"
-              id="5"
-            />
-          </div>
-          <div className={styles.newsCard}>
-            <NewsCard
-              title="temp"
-              imageLink={tempImg}
-              date="2021/08/01"
-              id="6"
-            />
-          </div>
+          {ids.map((id, index) => (
+              <div className={styles.newsCard} key={id}>
+                <NewsCard
+                  id={id}
+                  date={dates[index]}
+                  title={titles[index]}
+                  imageLink={images[index]}
+                />
+              </div>
+          ))}
         </div>
       </div>
     </div>
