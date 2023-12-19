@@ -42,16 +42,16 @@ a {
 
 @media (min-width: 1025px) {
   .pageTitle {
-    font-size: 60px;
+    font-size: 72px;
   }
 }
 @media (max-width: 1024px) and (min-width: 481px) {
   .pageTitle {
-    font-size: 40px;
+    font-size: 60px;
   }
 }
 @media (max-width: 480px) {
   .pageTitle {
-    font-size: 30px;
+    font-size: 42px;
   }
 }

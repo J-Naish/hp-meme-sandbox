@@ -1,0 +1,65 @@
+.container {
+  padding: 0 5%;
+}
+
+.newsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.newsCard {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+
+@media (min-width: 1025px) {
+
+  .container {
+    margin-top: 120px;
+  }
+
+  .newsContainer {
+    margin-top: 60px;
+  }
+
+  .newsCard {
+    flex-basis: 30%;
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 481px) {
+
+  .container {
+    margin-top: 100px;
+  }
+
+  .newsContainer {
+    margin-top: 40px;
+  }
+
+  .newsCard {
+    flex-basis: 45%;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .container {
+    margin-top: 80px;
+  }
+
+  .newsContainer {
+    margin-top: 40px;
+  }
+
+  .newsCard {
+    flex-basis: 50%;
+    margin-bottom: 40px;
+  }
+
+}

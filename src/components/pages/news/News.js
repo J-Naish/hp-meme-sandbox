@@ -44,7 +44,59 @@ export default async function News() {
       <Background />
       <div className={styles.head}>
         <div className={styles.title}>
-          <h1 className={`pageTitle`}>News</h1>
+          <h1 className={`pageTitle ${styles.title}`}>News</h1>
+        </div>
+      </div>
+      <div className={styles.body}>
+        <div className={styles.newsContainer}>
+          <div className={styles.newsCard}>
+            <NewsCard
+              title="temp"
+              imageLink={tempImg}
+              date="2021/08/01"
+              id="1"
+            />
+          </div>
+          <div className={styles.newsCard}>
+            <NewsCard
+              title="temp"
+              imageLink={tempImg}
+              date="2021/08/01"
+              id="2"
+            />
+          </div>
+          <div className={styles.newsCard}>
+            <NewsCard
+              title="temp"
+              imageLink={tempImg}
+              date="2021/08/01"
+              id="3"
+            />
+          </div>
+          <div className={styles.newsCard}>
+            <NewsCard
+              title="temp"
+              imageLink={tempImg}
+              date="2021/08/01"
+              id="4"
+            />
+          </div>
+          <div className={styles.newsCard}>
+            <NewsCard
+              title="temp"
+              imageLink={tempImg}
+              date="2021/08/01"
+              id="5"
+            />
+          </div>
+          <div className={styles.newsCard}>
+            <NewsCard
+              title="temp"
+              imageLink={tempImg}
+              date="2021/08/01"
+              id="6"
+            />
+          </div>
         </div>
       </div>
     </div>
