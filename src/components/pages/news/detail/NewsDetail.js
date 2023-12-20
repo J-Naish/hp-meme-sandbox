@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./NewsDetail.module.css";
 import Background from "@/components/common/UI/background/Background";
 import LinkButton from "@/components/common/UI/button/button";
@@ -37,6 +38,11 @@ export default async function NewsDetail({ id, language }) {
   return (
     <div className={styles.container}>
       <Background />
+      <div className={styles.backToNews}>
+        <Link href={languageMapping.newsListLink[language]}>
+          {languageMapping.backToNews[language]}
+        </Link>
+      </div>
       <h1 className={styles.title}>
         {title}
         <BorderLine />
@@ -68,4 +74,16 @@ export default async function NewsDetail({ id, language }) {
       )}
     </div>
   )
+}
+
+
+const languageMapping = {
+  newsListLink: {
+    en: "/en/news",
+    ja: "/news"
+  },
+  backToNews: {
+    en: "←Back to News",
+    ja: "←ニュース一覧へ"
+  }
 }
