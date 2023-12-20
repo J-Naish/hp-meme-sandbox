@@ -3,7 +3,7 @@ import styles from './NewsCard.module.css';
 import LinkButton from '@/components/common/UI/button/button';
 
 
-export default function NewsCard({ title, imageLink, date, id }) {
+export default function NewsCard({ title, imageLink, date, id, language }) {
   return (
     <div className={styles.container}>
       <div className={styles.head}>
@@ -24,8 +24,14 @@ export default function NewsCard({ title, imageLink, date, id }) {
         </div>
       </div>
       <div className={styles.button}>
-        <LinkButton link={`/news/${id}`} label="Read More" />
+        <LinkButton link={`${linkMap[language]}${id}`} label="Read More" />
       </div>
     </div>
   );
+}
+
+
+const linkMap = {
+  en: "/en/news/",
+  ja: "/news/",
 }
