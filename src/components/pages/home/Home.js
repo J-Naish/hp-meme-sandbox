@@ -59,10 +59,6 @@ function HomeContent({ language }) {
 
         <Top />
 
-        <div className={styles.mainSection}>
-          <MainSection />
-        </div>
-
         <div className={`${styles.content} ${isBottomReached ? styles.reachedBottom : ''}`}>
           <Spacer />
           <AboutMemeSection language={language}/>

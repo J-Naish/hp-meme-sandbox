@@ -3,6 +3,7 @@
 }
 
 .content {
+  margin-top: 100vh;
   background: rgba(0, 0, 0, 0.9);
   backdrop-filter: blur(8px);
   width: 100%;
