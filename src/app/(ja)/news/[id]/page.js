@@ -4,8 +4,8 @@ import NewsDetail from "@/components/pages/news/detail/NewsDetail.js";
 export async function generateStaticParams() {
 
   const tableName = "list";
-  const url = process.env.GOOGLE_SHEETS_URL;
-  const key = process.env.GOOGLE_SHEETS_API_KEY;
+  const url = process.env.NEXT_PUBLIC_GOOGLE_SHEETS_URL;
+  const key = process.env.NEXT_PUBLIC_GOOGLE_SHEETS_API_KEY;
 
   // api url
   const api = `${url}${tableName}?key=${key}`;
