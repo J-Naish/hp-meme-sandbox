@@ -62,6 +62,7 @@ export default async function News({ language }) {
                   date={dates[index]}
                   title={splitStringIntoArray(titles[index])[languageNumber]}
                   imageLink={images[index]}
+                  language={language}
                 />
               </div>
           ))}
