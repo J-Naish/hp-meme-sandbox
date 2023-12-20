@@ -1,20 +1,17 @@
+import { notFound } from "next/navigation";
 import NewsDetail from "@/components/pages/news/detail/NewsDetail.js";
+import { getNewsData } from "@/components/pages/news/getNewsData.js";
 
 
-export async function generateStaticParams() {
+const tableName = "list";
 
-  const tableName = "list";
-  const url = process.env.NEXT_PUBLIC_GOOGLE_SHEETS_URL;
-  const key = process.env.NEXT_PUBLIC_GOOGLE_SHEETS_API_KEY;
 
-  // api url
-  const api = `${url}${tableName}?key=${key}`;
+export const generateStaticParams = async () => {
 
-  // get news data
-  if (!api) throw new Error("URL is undefined");
-  const data = await fetch(api).then((res) => res.json());
+  const data = await getNewsData(tableName);
 
   const newsList = data["values"].reverse();
+  newsList.pop();
 
   return newsList.map((news) => ({
     id: news[0],
@@ -24,7 +21,11 @@ export async function generateStaticParams() {
 
 
 export default function Page({ params }) {
-  const { id } = params;
+
+  const id = params.id;
+
+  if(!id) return notFound();
+
   return (
     <NewsDetail id={id} language="en" />
   );
