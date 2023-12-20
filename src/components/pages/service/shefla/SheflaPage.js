@@ -7,7 +7,7 @@ function SheflaPage({ language }) {
     <div className='shefla-page'>
       <div className='shefla-canvas'>
         <ScrollableCanvas
-          glbUrl="/assets/shefla.glb"
+          glbUrl="/assets/model/shefla.glb"
           scale={[1, 1, 1]}
         />
       </div>

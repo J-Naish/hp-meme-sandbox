@@ -7,7 +7,7 @@ function ParallelPage({ language }) {
     <div className='parallel-page'>
       <div className='parallel-canvas'>
         <ScrollableCanvas
-          glbUrl="/assets/parallel.glb"
+          glbUrl="/assets/model/parallel.glb"
           scale={[0.9, 0.9, 0.9]}
         />
       </div>

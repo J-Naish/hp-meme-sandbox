@@ -1,12 +1,15 @@
 .container {
   z-index: calc(var(--scrollableCanvasZIndex) + 1);
-  text-shadow: var(--blackShadow);
   position: absolute;
 }
 
 .fade {
   opacity: var(--opacity, 1);
   transition: opacity 0.5s ease-in-out;
+}
+
+.title, .subtitle, .itemTitle, .container p {
+  text-shadow: var(--blackShadow);
 }
 
 .title , .subtitle {

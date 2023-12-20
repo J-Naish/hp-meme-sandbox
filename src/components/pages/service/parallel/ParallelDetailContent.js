@@ -5,10 +5,10 @@ import { useRef } from "react";
 import LinkButton from "@/components/common/UI/button/button.js";
 import { useScrollFade } from "@/components/common/utils/useScrollFade.js";
 import { languageMapping } from "./languageMapping.js";
-import { linkMap, linkMap, linkMap } from "@/map/linkMap"; 
+import { linkMap } from "@/map/linkMap"; 
 
 
-const linkMap = {
+const links = {
   en: linkMap.contact.en,
   ja: linkMap.contact.ja
 }
@@ -126,7 +126,7 @@ function ParallelDetailContent({ language }) {
         </div>
 
         <div className={`${styles.button} ${styles.fade}`} ref={ref17}>
-          <LinkButton language={language} label={"Contact"} link={linkMap[language]}/>
+          <LinkButton language={language} label={"Contact"} link={links[language]}/>
         </div>
 
       </div>

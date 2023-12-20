@@ -9,7 +9,7 @@ function MetaInfluencerPage({ language }) {
     <div className='meta-influencer-page'>
       <div className='meta-influencer-canvas'>
         <ScrollableCanvas
-          glbUrl="/assets/meta-influencer.glb"
+          glbUrl="/assets/model/meta-influencer.glb"
           scale={[0.9, 0.9, 0.9]}
         />
       </div>

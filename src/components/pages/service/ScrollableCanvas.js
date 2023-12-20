@@ -116,8 +116,8 @@ function CustomGlb({ glbUrl, scale, scrollY }) {
     let scaleFactor = 0.6 + ((window.innerWidth - 576) / 1124) * 0.3;
 
     if(groupRef.current) {
-      const rotY = scrollY * 0.005;
-      groupRef.current.rotation.y = rotY;
+
+      groupRef.current.rotation.y += 0.002;
 
       // update the position X according to the client width
       groupRef.current.position.x = posX;
