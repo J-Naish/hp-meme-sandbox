@@ -1,6 +1,7 @@
 import BaseLayout from "../base-layout";
 
 export const metadata = {
+  metadataBase: new URL('https://llcmeme.com'),
   title: 'Meme',
   description: '合同会社Memeオフィシャルコーポレートサイト',
   openGraph: {
