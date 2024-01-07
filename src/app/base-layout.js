@@ -1,8 +1,11 @@
 import { Noto_Sans_JP, Bebas_Neue } from "next/font/google";
 
 import './globals.css';
+import { Suspense } from "react";
 import Header from "@/components/common/UI/header/header";
 import Footer from "@/components/common/UI/footer/footer";
+import Loading from "@/components/common/UI/loading/Loading";
+
 
 const notojp = Noto_Sans_JP({
   weight: ["400", "500"],
@@ -24,11 +27,13 @@ export default function BaseLayout({ children, lang }) {
   return (
     <html lang={lang}>
       <body className={`${notojp.variable} ${bebas.variable}`}>
-        <Header language={lang} />
-        <main>
-          {children}
-        </main>
-        <Footer language={lang} />
+        <Suspense fallback={<Loading />}>
+          <Header language={lang} />
+          <main>
+            {children}
+          </main>
+          <Footer language={lang} />
+        </Suspense>
       </body>
     </html>
   )
