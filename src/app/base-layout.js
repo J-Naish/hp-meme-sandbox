@@ -27,13 +27,12 @@ export default function BaseLayout({ children, lang }) {
   return (
     <html lang={lang}>
       <body className={`${notojp.variable} ${bebas.variable}`}>
-        <Suspense fallback={<Loading />}>
-          <Header language={lang} />
-          <main>
-            {children}
-          </main>
-          <Footer language={lang} />
-        </Suspense>
+        <Loading />
+        <Header language={lang} />
+        <main>
+          {children}
+        </main>
+        <Footer language={lang} />
       </body>
     </html>
   )
