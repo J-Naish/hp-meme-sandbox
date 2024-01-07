@@ -1,7 +1,6 @@
 import { Noto_Sans_JP, Bebas_Neue } from "next/font/google";
 
 import './globals.css';
-import { Suspense } from "react";
 import Header from "@/components/common/UI/header/header";
 import Footer from "@/components/common/UI/footer/footer";
 import Loading from "@/components/common/UI/loading/Loading";
