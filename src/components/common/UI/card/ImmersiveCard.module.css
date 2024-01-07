@@ -63,11 +63,6 @@
   justify-content: space-around;
 }
 
-.symbol {
-  width: 30%;
-  aspect-ratio: 1/1;
-}
-
 .description {
   color: rgba(255, 255, 255, 0.8);
 }
@@ -75,6 +70,10 @@
 @media screen and (min-width: 1025px) {
   .title {
     font-size: 24px;
+  }
+  .symbol {
+    width: 130px;
+    height: 130px;
   }
   .description {
     margin-top: 10px;
@@ -88,6 +87,10 @@
   .title {
     font-size: 22px;
   }
+  .symbol {
+    width: 130px;
+    height: 130px;
+  }
   .description {
     font-size: 15px;
   }
@@ -95,6 +98,10 @@
 @media screen and (max-width: 480px) {
   .title {
     font-size: 20px;
+  }
+  .symbol {
+    width: 120px;
+    height: 120px;
   }
   .description {
     font-size: 14px;

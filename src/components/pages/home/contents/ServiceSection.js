@@ -5,9 +5,9 @@ import commonStyles from "./Common.module.css";
 import BorderLine from '@/components/common/UI/line/BorderLine';
 import ImmersiveCard from "@/components/common/UI/card/ImmersiveCard";
 import { languageMapping } from "./languageMapping";
-import temp1 from "../../../../../public/images/info-symbol.webp";
-import temp2 from "../../../../../public/images/info-symbol.webp";
-import temp3 from "../../../../../public/images/info-symbol.webp";
+import metaInfluencer from "../../../../../public/images/meta-influencer-symbol.webp";
+import parallel from "../../../../../public/images/parallel-symbol.webp";
+import shefla from "../../../../../public/images/shefla-symbol.webp";
 
 
 const color1 = "rgb(255,160,0)";
@@ -28,7 +28,7 @@ function ServiceSection({ language }) {
       <div className={styles.content}>
         <div className={styles.cardWrapper}>
           <ImmersiveCard
-            imgUrl={temp1}
+            imgUrl={metaInfluencer}
             title={languageMapping.metaInfluencer.title[language]}
             description={languageMapping.metaInfluencer.description[language]}
             link={languageMapping.metaInfluencer.link[language]}
@@ -38,7 +38,7 @@ function ServiceSection({ language }) {
         </div>
         <div className={styles.cardWrapper}>
           <ImmersiveCard
-            imgUrl={temp2}
+            imgUrl={parallel}
             title={languageMapping.parallel.title[language]}
             description={languageMapping.parallel.description[language]}
             link={languageMapping.parallel.link[language]}
@@ -48,7 +48,7 @@ function ServiceSection({ language }) {
         </div>
         <div className={styles.cardWrapper}>
           <ImmersiveCard
-            imgUrl={temp3}
+            imgUrl={shefla}
             title={languageMapping.shefla.title[language]}
             description={languageMapping.shefla.description[language]}
             link={languageMapping.shefla.link[language]}
