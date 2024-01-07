@@ -114,8 +114,8 @@ const languageMapping = {
   },
   business: {
     service1: {
-      en: "Social media support and development",
-      ja: "SNS運用支援事業及び開発事業"
+      en: "Influencer marketing and development",
+      ja: "インフルエンサーマーケティング事業及び開発事業"
     },
     service2: {
       en: "Development",
