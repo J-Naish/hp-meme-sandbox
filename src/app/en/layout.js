@@ -11,6 +11,11 @@ export const metadata = {
     siteName: 'Meme',
     locale: 'en_US',
     type: 'website',
+    images: {
+      url: 'https://llcmeme.com/images/logo.png',
+      width: 600,
+      height: 600,
+    },
   }
 }
 
