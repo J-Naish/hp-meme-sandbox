@@ -16,16 +16,6 @@ export const metadata = {
       width: 600,
       height: 600,
     },
-  },
-  twitter: {
-    card: "app",
-    title: "Meme",
-    description: "合同会社Memeオフィシャルコーポレートサイト",
-    images: {
-      url: 'https://llcmeme.com/images/logo.png',
-      width: 600,
-      height: 600,
-    },
   }
 }
 
