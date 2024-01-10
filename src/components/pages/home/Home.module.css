@@ -5,6 +5,7 @@
 .content {
   margin-top: 100vh;
   background: rgba(0, 0, 0, 0.9);
+  -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   width: 100%;
   box-sizing: border-box;
