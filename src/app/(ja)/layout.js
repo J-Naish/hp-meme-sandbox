@@ -12,9 +12,9 @@ export const metadata = {
     locale: 'ja_JP',
     type: 'website',
     images: {
-      url: 'https://llcmeme.com/images/logo.png',
-      width: 600,
-      height: 600,
+      url: 'https://llcmeme.com/images/open-graph.png',
+      width: 1200,
+      height: 628,
     },
   }
 }
