@@ -34,7 +34,7 @@ export const languageMapping = {
     },
     description: {
       en: "We develop web applications, XR applications, 3D mobile applications, and 3D games using 3DCG.",
-      ja: "3DCGを用いたWeb開発、XRアプリ開発、3Dモバイルアプリ開発、3Dゲームの開発をしています。"
+      ja: "3DCGを用いたWeb開発(HP制作やLP制作等)、広告運用、XRアプリ開発、3Dモバイルアプリ開発、3Dゲームの開発をしています。"
     }
   },
   shefla: {

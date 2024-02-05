@@ -6,7 +6,7 @@ export const metadata = {
   description: 'The official website of Meme, LLC.',
   openGraph: {
     title: 'Meme',
-    description: 'The official website of Meme, LLC.',
+    description: 'LLC Meme｜We are working towards a future where, through social media and virtual 3D experiences, individuals and corporations alike can exert significant influence worldwide. Anticipating the advent of a new form of digital society, Meme is active in leveraging social media and 3D technology from the current stage to enable people and companies to shine brighter.',
     url: 'https://llcmeme.com',
     siteName: 'Meme',
     locale: 'en_US',

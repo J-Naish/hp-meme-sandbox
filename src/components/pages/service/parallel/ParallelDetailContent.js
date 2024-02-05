@@ -35,8 +35,10 @@ function ParallelDetailContent({ language }) {
   const ref15 = useRef(null);
   const ref16 = useRef(null);
   const ref17 = useRef(null);
+  const ref18 = useRef(null);
+  const ref19 = useRef(null);
 
-  useScrollFade([ref1, ref2, ref3, ref4, ref5, ref6, ref7, ref8, ref9, ref10, ref11, ref12, ref13, ref14, ref15, ref16, ref17]);
+  useScrollFade([ref1, ref2, ref3, ref4, ref5, ref6, ref7, ref8, ref9, ref10, ref11, ref12, ref13, ref14, ref15, ref16, ref17, ref18, ref19]);
 
 
   return (
@@ -87,45 +89,54 @@ function ParallelDetailContent({ language }) {
           </div>
           <div className={styles.fade} ref={ref9}>
             <p>{languageMapping.content2.p2[language]}</p>
+            <br></br><br></br>
+          </div>
+          <div className={styles.fade} ref={ref10}>
+            <p>{languageMapping.content2.p3[language]}</p>
+            <br></br>
+          </div>
+          <div className={styles.fade} ref={ref11}>
+            <p>{languageMapping.content2.p4[language]}</p>
             <br></br><br></br><br></br>
           </div>
+
         </div>
 
         <div className={styles.item}>
-          <div className={`${styles.itemTitle} ${styles.fade}`} ref={ref10}>
+          <div className={`${styles.itemTitle} ${styles.fade}`} ref={ref12}>
             <h3>{languageMapping.content3.title[language]}</h3>
           </div>
-          <div className={styles.fade} ref={ref11}>
+          <div className={styles.fade} ref={ref13}>
             <br></br><br></br>
             <p>{languageMapping.content3.p1[language]}</p>
             <br></br><br></br>
           </div>
-          <div className={styles.fade} ref={ref12}>
+          <div className={styles.fade} ref={ref14}>
             <p>{languageMapping.content3.p2[language]}</p>
             <br></br><br></br>
           </div>
-          <div className={styles.fade} ref={ref13}>
+          <div className={styles.fade} ref={ref15}>
             <p>{languageMapping.content3.p3[language]}</p>
             <br></br><br></br><br></br>
           </div>
         </div>
 
         <div className={styles.item}>
-          <div className={`${styles.itemTitle} ${styles.fade}`} ref={ref14}>
+          <div className={`${styles.itemTitle} ${styles.fade}`} ref={ref16}>
             <h3>{languageMapping.content4.title[language]}</h3>
           </div>
-          <div className={styles.fade} ref={ref15}>
+          <div className={styles.fade} ref={ref17}>
             <br></br><br></br>
             <p>{languageMapping.content4.p1[language]}</p>
             <br></br>
           </div>
-          <div className={styles.fade} ref={ref16}>
+          <div className={styles.fade} ref={ref18}>
             <p>{languageMapping.content4.p2[language]}</p>
             <br></br><br></br><br></br><br></br>
           </div>
         </div>
 
-        <div className={`${styles.button} ${styles.fade}`} ref={ref17}>
+        <div className={`${styles.button} ${styles.fade}`} ref={ref19}>
           <LinkButton language={language} label={"Contact"} link={links[language]}/>
         </div>
 

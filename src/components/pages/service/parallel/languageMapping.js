@@ -18,7 +18,7 @@ export const languageMapping = {
     },
     p4: {
       en: "- Development of websites and web apps incorporating 3D",
-      ja: "・3Dをページに組み込んだWebサイトやWebアプリの開発"
+      ja: "・3Dをページに組み込んだWebサイトやWebアプリの開発から広告運用まで企画から制作、運用をワンストップで提供"
     },
     p5: {
       en: "- Development of VR & AR applications running on XR devices",
@@ -45,6 +45,14 @@ export const languageMapping = {
     p2: {
       en: "By combining web pages with 3D elements, it becomes possible to create immersive experiences that engage viewers, as well as maximize visual appeal to its fullest extent.",
       ja: "Webページと3Dを組み合わせることによって、見た人を没入させるような体験を創出したり、視覚的な訴求を最大限まで高めることが可能になります。"
+    },
+    p3: {
+      en: "Furthermore, we can provide a one-stop service from planning to production and operation, including advertising operations.",
+      ja: "また、広告運用のプロフェッショナル人材と共闘し企画から制作、運用までをワンストップでご提供可能です。"
+    },
+    p4: {
+      en: "We are committed to providing the best value to companies, with marketing, development, and creativity as our core.",
+      ja: "マーケティング、開発、クリエイティブを軸に企業に最適な価値をご提供させていただきます。"
     }
   },
   content3: {
