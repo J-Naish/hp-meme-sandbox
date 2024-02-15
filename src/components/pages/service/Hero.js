@@ -11,7 +11,7 @@ import styles from "./Hero.module.css";
 export default function Hero({ children }) {
   return (
     <div className={styles.container}>
-      <Canvas className={styles.canvas} concurrent="true" gl={{ alpha: false }} camera={{ position: [0, 20, 50], fov: 15 }}>
+      <Canvas className={styles.canvas} gl={{ alpha: false }} camera={{ position: [0, 20, 50], fov: 15 }}>
         <CustomEnvironment />
         <MouseCameraShake />
         <Ground />
@@ -26,7 +26,7 @@ function CustomEnvironment() {
   return (
     <>
       <color attach="background" args={['black']} />
-      <fog attach="fog" args={['black', 10, 15]} />
+      <fog attach="fog" args={['black', 10, 11.5]} />
       <ambientLight intensity={0.6} />
       <spotLight position={[0, 10, 0]} intensity={0.3} />
       <directionalLight position={[-50, 0, -40]} intensity={0.7} />
@@ -59,8 +59,8 @@ function Ground() {
 function MouseCameraShake() {
   const [vec] = useState(() => new THREE.Vector3())
   useFrame((state) => {
-    state.camera.position.lerp(vec.set(state.pointer.x * 5, 5 + state.pointer.y * 2, 8), 0.05);
-    state.camera.lookAt(0, 2, 0);
+    state.camera.position.lerp(vec.set(state.pointer.x * 5, 1 + state.pointer.y, 8), 0.05);
+    state.camera.lookAt(0, 1, 0);
   })
   return null;
 }
