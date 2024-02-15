@@ -43,13 +43,13 @@ function Ground() {
         resolution={512}
         mirror={0.5}
         blur={[400, 100]}
-        mixBlur={6}
+        mixBlur={10}
         mixStrength={1.5}
         color="#a0a0a0"
         metalness={0.4}
         roughnessMap={roughness}
         normalMap={normal}
-        normalScale={[2, 2]}
+        normalScale={[4, 4]}
       />
     </Plane>
   );
