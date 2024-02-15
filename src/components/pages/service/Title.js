@@ -3,7 +3,7 @@ import styles from './Title.module.css';
 
 export default function Title({ title, subtitle, color }) {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} style={{ color: color }}>
       <h1 className={styles.title}>{title}</h1>
       <div
         className={styles.line}
