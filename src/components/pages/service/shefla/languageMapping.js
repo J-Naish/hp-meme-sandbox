@@ -1,4 +1,8 @@
 export const languageMapping = {
+  title: {
+    en: "Shefla",
+    ja: "Shefla"
+  },
   content1: {
     title: {
       en: "What is Shefla?",
