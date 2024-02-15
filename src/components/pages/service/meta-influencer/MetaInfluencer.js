@@ -1,14 +1,10 @@
-"use client";
-
-
-import styles from "./MetaInfluencerDetailContent.module.css";
-import Hero from "../Hero.js";
+import styles from "./MetaInfluencer.module.css";
+import Hero from "../Hero";
 import VideoText from "../VideoText";
 import { languageMapping } from "./languageMapping";
 
 
-// texts in Meta Influencer page
-export default function MetaInfluencerDetailContent({ language }) {
+export default function MetaInfluencer({ language }) {
   return (
     <div className={styles.container}>
       <Hero>
