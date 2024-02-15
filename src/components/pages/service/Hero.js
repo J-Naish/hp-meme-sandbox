@@ -38,7 +38,7 @@ function CustomEnvironment() {
 function Ground() {
   const [normal, roughness] = useTexture(['/assets/textures/ground/normal.jpg', '/assets/textures/ground/roughness.jpg']);
   return (
-    <Plane rotation={[-Math.PI / 2, 0, Math.PI / 2]} args={[10, 10]}>
+    <Plane rotation={[-Math.PI / 2, 0, Math.PI / 2]} args={[12, 10]}>
       <MeshReflectorMaterial
         resolution={512}
         mirror={0.5}
@@ -59,7 +59,7 @@ function Ground() {
 function MouseCameraShake({ lookAtY = 0.5 }) {
   const [vec] = useState(() => new THREE.Vector3())
   useFrame((state) => {
-    state.camera.position.lerp(vec.set(state.pointer.x * 5, 1 + state.pointer.y, 8), 0.05);
+    state.camera.position.lerp(vec.set(state.pointer.x * 5, Math.max(1 + state.pointer.y, 0.4), 8), 0.05);
     state.camera.lookAt(0, lookAtY, 0);
   })
   return null;
