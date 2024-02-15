@@ -1,4 +1,8 @@
 export const languageMapping = {
+  title: {
+    en: "Parallel",
+    ja: "Parallel"
+  },
   content1: {
     title: {
       en: "What is Parallel?",

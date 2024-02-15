@@ -1,7 +1,7 @@
-import ParallelPage from "@/components/pages/service/parallel/ParallelPage";
+import Parallel from "@/components/pages/service/parallel/Parallel";
 
 export default function Page() {
   return (
-    <ParallelPage language="en" />
+    <Parallel language="en" />
   )
 }

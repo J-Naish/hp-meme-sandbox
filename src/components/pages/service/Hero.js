@@ -8,12 +8,12 @@ import { useTexture, Plane, MeshReflectorMaterial } from '@react-three/drei';
 import styles from "./Hero.module.css";
 
 
-export default function Hero({ children }) {
+export default function Hero({ children, lookAtY }) {
   return (
     <div className={styles.container}>
       <Canvas className={styles.canvas} gl={{ alpha: false }} camera={{ position: [0, 20, 50], fov: 15 }}>
         <CustomEnvironment />
-        <MouseCameraShake />
+        <MouseCameraShake lookAtY={lookAtY} />
         <Ground />
         {children}
       </Canvas>
@@ -56,11 +56,11 @@ function Ground() {
 }
 
 
-function MouseCameraShake() {
+function MouseCameraShake({ lookAtY = 0.5 }) {
   const [vec] = useState(() => new THREE.Vector3())
   useFrame((state) => {
     state.camera.position.lerp(vec.set(state.pointer.x * 5, 1 + state.pointer.y, 8), 0.05);
-    state.camera.lookAt(0, 1, 0);
+    state.camera.lookAt(0, lookAtY, 0);
   })
   return null;
 }
