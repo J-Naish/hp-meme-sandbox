@@ -1,0 +1,97 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.badgeContainer {
+  display: grid;
+}
+
+
+@media (min-width: 1025px) {
+
+  .content {
+    width: 860px;
+  }
+
+  .text {
+    margin-top:60px;
+    font-size: 20px;
+  }
+
+  .badgeContainer {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 80px;
+  }
+
+  .badgeContainer .wideBadge {
+    grid-column: span 2;
+  }
+
+}
+
+
+@media (max-width: 1024px) and (min-width: 481px) {
+
+  .content {
+    width: 440px;
+  }
+
+  .text {
+    margin-top:60px;
+    font-size: 16px;
+  }
+
+  .badgeContainer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 60px;
+  }
+
+  .badgeContainer .wideBadge {
+    grid-column: span 2;
+  }
+
+}
+
+
+@media (max-width: 480px) and (min-width: 321px) {
+
+  .content {
+    width: 300px;
+  }
+
+  .text {
+    margin-top: 40px;
+    font-size: 14px;
+  }
+
+  .badgeContainer {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+  }
+
+}
+
+
+@media (max-width: 320px) {
+
+  .content {
+    width: 90%;
+  }
+
+  .text {
+    margin-top: 40px;
+    font-size: 14px;
+  }
+
+  .badgeContainer {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+  }
+
+}

@@ -134,5 +134,63 @@ export const languageMapping = {
         }
       }
     }
+  },
+  content3: {
+    title: {
+      en: "02",
+      ja: "02"
+    },
+    subtitle: {
+      en: "Advertising Agency Business",
+      ja: "広告代理店事業"
+    },
+    text: {
+      en: "We carefully listen to the client's issues and propose and execute the best solutions, such as analysis, branding, creative production, marketing, and execution support. \n(※All ads related to Yahoo, Google (including YouTube), Meta, LINE, and Twitter (X) are supported.)",
+      ja: "クライアントの課題を丁寧にヒアリングし、分析、ブランディング、クリエイティブ制作、マーケティング、実行支援など、最適なソリューションをご提案・実行します。\n※広告に関して(ヤフー、Google(YouTubeも含む)Meta、LINE、Twitter(X)に紐づく広告は全て対応可)"
+    },
+    badge1: {
+      en: "Display Advertising",
+      ja: "ディスプレイ広告"
+    },
+    badge2: {
+      en: "Listing Advertising",
+      ja: "リスティング広告"
+    },
+    badge3: {
+      en: "Ad Network / DSP",
+      ja: "アドネットワーク広告/DSP"
+    },
+    badge4: {
+      en: "Retargeting Advertising",
+      ja: "リターゲティング広告"
+    },
+    badge5: {
+      en: "Affiliate Advertising",
+      ja: "アフィリエイト広告"
+    },
+    badge6: {
+      en: "Article Ad / Tie-up Ad",
+      ja: "記事広告/タイアップ広告"
+    },
+    badge7: {
+      en: "SNS Advertising",
+      ja: "SNS広告"
+    },
+    badge8: {
+      en: "Video Advertising",
+      ja: "動画広告/YouTube広告"
+    },
+    badge9: {
+      en: "Reward Advertising",
+      ja: "リワード広告"
+    },
+    badge10: {
+      en: "Native Advertising",
+      ja: "ネイティブ広告"
+    },
+    badge11: {
+      en: "Banner Production / LP Production / UI・UX Design / Video Production",
+      ja: "バナー制作/LP・Webサイト制作/UI・UX設計/映像制作"
+    }
   }
 }
