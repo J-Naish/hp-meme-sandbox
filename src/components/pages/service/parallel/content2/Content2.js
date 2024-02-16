@@ -1,5 +1,5 @@
 import styles from "./Content2.module.css";
-import ContentTitle from "../ContentTitle";
+import SectionTitle from "./SectionTitle";
 import Title from "../../Title";
 import Card from "./Card";
 import { languageMapping } from "../languageMapping";
@@ -20,8 +20,8 @@ export default function Content2({ language, color }) {
       <Title title={languageMapping.content2.title[language]} subtitle={languageMapping.content2.subtitle[language]} color={color} />
     
       <div className={styles.content}>
-        <div className={styles.contentTitle}>
-          <ContentTitle title={languageMapping.content2.item1.title[language]} color={color} />
+        <div className={styles.sectionTitle}>
+          <SectionTitle title={languageMapping.content2.item1.title[language]} color={color} />
         </div>
         <p className={styles.text}>{languageMapping.content2.item1.p[language]}</p>
         <div className={styles.cardContainer}>
@@ -33,8 +33,8 @@ export default function Content2({ language, color }) {
       </div>
 
       <div className={styles.content}>
-        <div className={styles.contentTitle}>
-          <ContentTitle title={languageMapping.content2.item2.title[language]} color={color} />
+        <div className={styles.sectionTitle}>
+          <SectionTitle title={languageMapping.content2.item2.title[language]} color={color} />
         </div>
         <p className={styles.text}>{languageMapping.content2.item2.p[language]}</p>
         <div className={styles.cardContainer}>

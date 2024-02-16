@@ -11,11 +11,11 @@
     align-items: center;
   }
 
-  .contentTitle, .text, .cardContainer {
+  .sectionTitle, .text, .cardContainer {
     width: 840px;
   }
 
-  .contentTitle {
+  .sectionTitle {
     margin-left: -170px;
   }
 
@@ -47,11 +47,11 @@
     align-items: center;
   }
 
-  .contentTitle, .text, .cardContainer {
+  .sectionTitle, .text, .cardContainer {
     width: 460px;
   }
 
-  .contentTitle {
+  .sectionTitle {
     margin-left: -90px;
   }
 
@@ -82,11 +82,11 @@
     align-items: center;
   }
 
-  .contentTitle, .text, .cardContainer {
+  .sectionTitle, .text, .cardContainer {
     width: 300px;
   }
 
-  .contentTitle {
+  .sectionTitle {
     margin-left: 0px;
   }
 
