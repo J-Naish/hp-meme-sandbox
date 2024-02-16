@@ -1,6 +1,6 @@
 import styles from './Content1.module.css';
-import Title from '../Title';
-import { languageMapping } from './languageMapping';
+import Title from '../../Title';
+import { languageMapping } from '../languageMapping';
 
 
 export default function Content1({ language, color }) {
