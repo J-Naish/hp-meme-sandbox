@@ -7,7 +7,9 @@ import Content1 from "./content1/Content1";
 import Content2 from "./content2/Content2";
 import Content3 from "./content3/Content3";
 import Content4 from "./content4/Content4";
+import Content5 from "./content5/Content5";
 import { languageMapping } from "./languageMapping";
+
 
 
 const color = "#67D2DB";
@@ -27,6 +29,9 @@ export default function Parallel({ language }) {
       <Content3 language={language} color={color} />
       <Spacer /><Spacer />
       <Content4 language={language} color={color} />
+      <Spacer /><Spacer />
+      <Content5 language={language} color={color} />
+      <Spacer /><Spacer /><Spacer /><Spacer />
     </div>
   );
 }

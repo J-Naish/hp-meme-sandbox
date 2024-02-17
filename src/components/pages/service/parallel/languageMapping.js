@@ -210,5 +210,19 @@ export const languageMapping = {
       en: "While the field is expected to boom, there's a talent shortage and few precedents in the industry. Parallel's XR engineering team handles development from front to back. We're also focusing on the potential of the 2024-released Apple Vision Pro, with our XR team already researching and developing applications using Swift and Unity.",
       ja: "これから爆発的な市場の成長が見込まれる分野な一方で、業界には人材が少なく先行事例も少ないですが、ParallelのXRエンジニアチームがフロントからバックまでの開発を行なえます。また、私たちは2024年発売されたApple Vision Proのポテンシャルの高さに期待し、現段階からParallelのXRエンジニアチームがSwiftやUnityを用いたApple Vision Proアプリケーションの研究開発に取り組んでいます。"
     }
+  },
+  content5: {
+    title: {
+      en: "04",
+      ja: "04"
+    },
+    subtitle: {
+      en: "3D App & Game Development",
+      ja: "3Dアプリ・ゲーム開発事業"
+    },
+    p: {
+      en: "Similar to XR application development, we develop cross-platform 3D applications and 3D games using game engines such as Unity and Unreal Engine.",
+      ja: "XRアプリケーション開発と同様に、UnityやUnrealEngineといったゲームエンジンを用いてクロスプラットフォームの3Dアプリケーションや3Dゲームの開発を行っています。現状でも莫大な市場規模がありさらなる成長も見込まれるこの分野で精鋭のエンジニアチームが開発を請け負います。"
+    }
   }
 }
