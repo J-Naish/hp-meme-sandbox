@@ -192,5 +192,23 @@ export const languageMapping = {
       en: "Banner Production / LP Production / UI・UX Design / Video Production",
       ja: "バナー制作/LP・Webサイト制作/UI・UX設計/映像制作"
     }
+  },
+  content4: {
+    title: {
+      en: "03",
+      ja: "03"
+    },
+    subtitle: {
+      en: "XR App Development",
+      ja: "XRアプリ開発事業"
+    },
+    p1: {
+      en: "Developing VR/AR applications for XR headsets and mobile AR apps using Unity, known for Pokémon GO, and Unreal Engine, used for high-graphics 3D development.",
+      ja: "ポケモンGOの開発などに活用されたUnityやハイグラフィック3D開発に使用されるUnrealEngineを用いて、XRヘッドセットで動かすことを前提としたVR・ARアプリケーションやモバイル端末のARアプリの開発をしています。"
+    },
+    p2: {
+      en: "While the field is expected to boom, there's a talent shortage and few precedents in the industry. Parallel's XR engineering team handles development from front to back. We're also focusing on the potential of the 2024-released Apple Vision Pro, with our XR team already researching and developing applications using Swift and Unity.",
+      ja: "これから爆発的な市場の成長が見込まれる分野な一方で、業界には人材が少なく先行事例も少ないですが、ParallelのXRエンジニアチームがフロントからバックまでの開発を行なえます。また、私たちは2024年発売されたApple Vision Proのポテンシャルの高さに期待し、現段階からParallelのXRエンジニアチームがSwiftやUnityを用いたApple Vision Proアプリケーションの研究開発に取り組んでいます。"
+    }
   }
 }

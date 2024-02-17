@@ -1,0 +1,137 @@
+.container {
+  position: relative;
+}
+
+.circleContainer {
+  position: absolute;
+  border-radius: 50%;
+  
+}
+
+.circleWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.circle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.title, .imageWrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #191919;
+  border: 1px solid transparent;
+  background-clip: padding-box;
+  z-index: 3;
+}
+
+.circleContainer.small.smallCircle1 {
+  top: 10%;
+  left: 0;
+}
+
+.circleContainer.small.smallCircle2 {
+  top: 0;
+  left: 50%;
+}
+
+.circleContainer.small.smallCircle3 {
+  top: 10%;
+  right: 0;
+}
+
+.circleContainer.large {
+  top: 30%;
+  left: 50%;
+}
+
+.circleContainer.small.smallCircle2, .circleContainer.large {
+  transform: translate(-50%, 0);
+}
+
+.circle {
+  animation: rotate 7s infinite;
+}
+.circle2 {
+  animation-delay: 3s;
+}
+.circle3 {
+  animation-delay: 6s;
+}
+.circle4 {
+  animation-delay: 9s;
+}
+
+@keyframes rotate {
+  0% {
+    rotate: 0deg;
+  }
+  50% {
+    rotate: 360deg;
+  }
+  75% {
+    rotate: 360deg;
+  }
+  100% {
+    rotate: 0deg;
+  }
+}
+
+
+@media (min-width: 481px) {
+
+  .container {
+    width: 400px;
+    height: 480px;
+    min-width: 400px;
+    min-height: 480px;
+  }
+
+  .circleContainer.small {
+    width: 120px;
+    height: 120px;
+  }
+
+  .circleContainer.large {
+    width: 320px;
+    height: 320px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  .container {
+    width: 300px;
+    height: 360px;
+    min-width: 300px;
+    min-height: 360px;
+  }
+
+  .circleContainer.small {
+    width: 90px;
+    height: 90px;
+  }
+
+  .circleContainer.large {
+    width: 240px;
+    height: 240px;
+  }
+
+}
