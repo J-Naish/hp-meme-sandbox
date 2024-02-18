@@ -2,8 +2,12 @@ import styles from "./MetaInfluencer.module.css";
 import Underlay from "../Underlay";
 import Hero from "../Hero";
 import VideoText from "../VideoText";
+import Spacer from "../Spacer";
+import Content1 from "./content1/Content1";
 import { languageMapping } from "./languageMapping";
 
+
+const color = "#ACC7DA";
 
 export default function MetaInfluencer({ language }) {
   return (
@@ -13,6 +17,8 @@ export default function MetaInfluencer({ language }) {
         <VideoText position={[0, 1.35, -2]} title={languageMapping.title1[language]} src="/assets/textures/video/meta-influencer.mp4" />
         <VideoText position={[0, 0.35, -2]} title={languageMapping.title2[language]} src="/assets/textures/video/meta-influencer.mp4" />
       </Hero>
+      <Spacer /><Spacer />
+      <Content1 language={language} color={color} />
     </div>
   );
 }
