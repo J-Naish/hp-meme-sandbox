@@ -46,5 +46,15 @@ export const languageMapping = {
       en: "However, we are using AI, 3DCG, and other technologies to create virtual but real humans and disseminate them to the world. The scale of Meta Influencer is still small, but our ultimate goal is to create influencers with a world-renowned reputation like Justin Bieber and Cristiano Ronaldo.",
       ja: "しかし私たちはAIや3DCGなどの技術を駆使することで、バーチャルだがリアルな人間を生み出し世界に向けてそれを発信しております。Meta Influencerの規模はまだ小さいですが、Justin BieberやCristiano Ronaldoのような世界的な知名度を誇るインフルエンサーにすることを目最終目標としています。"
     }
+  },
+  content3: {
+    title: {
+      en: "Social Media",
+      ja: "Social Media"
+    },
+    subtitle: {
+      en: "SNS Accounts",
+      ja: "SNSアカウント"
+    }
   }
 }
