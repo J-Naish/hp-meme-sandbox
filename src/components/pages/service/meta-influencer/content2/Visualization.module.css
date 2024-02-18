@@ -1,0 +1,183 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circleContainer {
+  position: relative;
+}
+
+.circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  animation: rotate 8s infinite;
+}
+.circle2 {
+  animation-delay: 3s;
+}
+.circle3 {
+  animation-delay: 5s;
+}
+.circle4 {
+  animation-delay: 7s;
+}
+
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #191919;
+  border: 1px solid transparent;
+  background-clip: padding-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.dashedLineContainer {
+  position: relative;
+}
+
+.dashedLine {
+  position: absolute;
+  top: 0;
+  border-style: dashed;
+  border-bottom: none;
+}
+
+.dashedLine1 {
+  border-top: none; border-left: none;
+}
+
+
+.iconContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #191919;
+  border: 1px solid transparent;
+  background-clip: padding-box;
+}
+
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  75% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
+@media (min-width: 481px) {
+
+  .circleContainer.largeCircle {
+    width: 240px;
+    height: 240px;
+  }
+
+  .dashedLineContainer {
+    width: 240px;
+    height: 120px;
+  }
+
+  .dashedLine1 {
+    width: 120px;
+    height: 120px;
+  }
+
+  .dashedLine2 {
+    width: 240px;
+    height: 60px;
+    margin-top: 60px;
+  }
+
+  .iconContainer {
+    width: 240px;
+  }
+
+  .circleContainer.smallCircle {
+    width: 80px;
+    height: 80px;
+  }
+
+  .icon1 {
+    margin-left: -40px;
+  }
+
+  .icon3 {
+    margin-right: -40px;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  .circleContainer.largeCircle {
+    width: 160px;
+    height: 160px;
+  }
+
+  .dashedLineContainer {
+    width: 160px;
+    height: 80px;
+  }
+
+  .dashedLine1 {
+    width: 80px;
+    height: 80px;
+  }
+
+  .dashedLine2 {
+    width: 160px;
+    height: 40px;
+    margin-top: 40px;
+  }
+
+  .iconContainer {
+    width: 160px;
+  }
+
+  .circleContainer.smallCircle {
+    width: 60px;
+    height: 60px;
+  }
+
+  .icon1 {
+    margin-left: -30px;
+  }
+
+  .icon3 {
+    margin-right: -30px;
+  }
+
+}
