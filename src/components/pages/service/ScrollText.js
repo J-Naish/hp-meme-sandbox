@@ -21,19 +21,19 @@ export default function ScrollText({ text1, text2, text3 }) {
     <div className={styles.container}>
       <div
         className={`${styles.text}`}
-        style={{ transform: `translateX(calc(-100% + ${scrollY * 0.085}vw))`}}
+        style={{ transform: `translateX(calc(-100% + ${scrollY * 0.075}vw))`}}
       >
         {text1}
       </div>
       <div
         className={`${styles.text}`}
-        style={{ transform: `translateX(calc(100vw + 100% - ${scrollY * 0.09}vw))`}}
+        style={{ transform: `translateX(calc(100vw + 100% - ${scrollY * 0.08}vw))`}}
       >
         {text2}
       </div>
       <div
         className={`${styles.text}`}
-        style={{ transform: `translateX(calc(-100% + ${scrollY * 0.08}vw))`}}
+        style={{ transform: `translateX(calc(-100% + ${scrollY * 0.07}vw))`}}
       >
         {text3}
       </div>
