@@ -2,7 +2,7 @@
 
 import { useRef } from 'react';
 import { useFrame } from '@react-three/fiber';
-import Glb from "../glb/Glb.js";
+import { useGLTF } from '@react-three/drei';
 import Meme from '../logo/Meme.js';
 
 
@@ -10,8 +10,6 @@ function ProjectedLogo({ position, scale }) {
   return (
     <>
       <group position={position} scale={scale}>
-        <rectAreaLight position={[0, 2.2, 0]} rotation={[-Math.PI / 2, 0, 0]} intensity={1} width={1} height={1} />
-        <rectAreaLight position={[0, 0.6, 0]} rotation={[Math.PI / 2, 0, 0]} intensity={1} width={1} height={1} />
         <Projector />
         <MemeLogo position={[0, 1.45, 0]} scale={[0.018, 0.018, 0.018]} />
       </group>
@@ -21,17 +19,68 @@ function ProjectedLogo({ position, scale }) {
 
 
 function Projector() {
-
-  const glbUrl = '/assets/model/projector.glb';
-
+  const { nodes } = useGLTF("/assets/model/projector.glb", true);
   return(
-    <Glb
-      glbUrl={glbUrl}
-      scale={[0.2, 0.2, 0.2]}
-      position={[0, 0, 0]}
+    <group scale={[0.19, 0.19, 0.19]}>
+      <mesh geometry={nodes.body1.geometry}>
+        <BodyMaterial />
+      </mesh>
+      <mesh geometry={nodes.body2.geometry}>
+        <BodyMaterial />
+      </mesh>
+      <mesh geometry={nodes.body3.geometry}>
+        <BodyMaterial />
+      </mesh>
+      <mesh geometry={nodes.body4.geometry}>
+        <BodyMaterial />
+      </mesh>
+      <mesh geometry={nodes.body5.geometry}>
+        <BodyMaterial />
+      </mesh>
+      <mesh geometry={nodes.light1.geometry}>
+        <LightMaterial emissiveIntensity={2} />
+      </mesh>
+      <mesh geometry={nodes.light2.geometry}>
+        <LightMaterial emissiveIntensity={2} />
+      </mesh>
+      <mesh geometry={nodes.light3.geometry}>
+        <LightMaterial />
+      </mesh>
+      <mesh geometry={nodes.light4.geometry}>
+        <LightMaterial />
+      </mesh>
+      <mesh geometry={nodes.light5.geometry}>
+        <LightMaterial />
+      </mesh>
+      <mesh geometry={nodes.light6.geometry}>
+        <LightMaterial />
+      </mesh>
+    </group>
+  );
+}
+
+function BodyMaterial() {
+  return (
+    <meshStandardMaterial
+      color="#102540"
+      metalness={0.9}
+      roughness={0.4}
     />
   );
 }
+function LightMaterial({ emissiveIntensity=0.3 }) {
+  return (
+    <meshStandardMaterial
+      color="#ffffff"
+      metalness={0.8}
+      roughness={0.4}
+      emissive={'#ffffff'}
+      emissiveIntensity={emissiveIntensity}
+    />
+  );
+}
+
+
 
 // mesh component of the Meme logo
 function MemeLogo({ position, scale }) {

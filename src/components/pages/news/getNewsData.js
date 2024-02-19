@@ -9,6 +9,7 @@ export async function getNewsData(tableName, option="") {
 
   // get news data
   if (!api) throw new Error("URL is undefined");
-  const res = await fetch(api);
+  // every 24 hours (86400 seconds) revalidate data
+  const res = await fetch(api, { next: { revalidate: 86400 }});
   return res.json();
 }

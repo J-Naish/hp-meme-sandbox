@@ -1,0 +1,28 @@
+.container {
+  overflow-x: hidden;
+}
+
+.text {
+  font-weight: var(--bold);
+  font-style: italic;
+  white-space: nowrap;
+}
+
+@media (min-width: 1025px) {
+  .text {
+    font-size: 80px;
+    margin: 24px 0;
+  }
+}
+@media (max-width: 1024px) and (min-width: 481px) {
+  .text {
+    font-size: 60px;
+    margin: 20px 0;
+  }
+}
+@media (max-width: 480px) {
+  .text {
+    font-size: 48px;
+    margin: 16px 0;
+  }
+}

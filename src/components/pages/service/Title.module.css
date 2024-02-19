@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.line {
+  height: 1px;
+}
+
+
+@media (min-width: 1025px) {
+  .title {
+    font-size: 72px;
+  }
+  .line {
+    width: 480px;
+    margin-top: 20px;
+  }
+  .subtitle {
+    margin-top: 10px;
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 481px) {
+  .title {
+    font-size: 48px;
+  }
+  .line {
+    width: 360px;
+    margin-top: 16px;
+  }
+  .subtitle {
+    margin-top: 8px;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 36px;
+  }
+  .line {
+    width: 240px;
+    margin-top: 12px;
+  }
+  .subtitle {
+    margin-top: 6px;
+    font-size: 20px;
+  }
+}

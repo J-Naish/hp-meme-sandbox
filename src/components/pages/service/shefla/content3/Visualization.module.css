@@ -1,0 +1,192 @@
+.container {
+  display: flex;
+}
+
+.flow {
+  display: flex;
+  align-items: center;
+}
+
+.dashedLine1, .dashedLine2 {
+  height: 50%;
+  border-bottom-width: 1px;
+  border-bottom-style: dashed;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.relation {
+  display: flex;
+  align-items: center;
+}
+
+.circle1Container, .circle2Container {
+  position: relative;
+}
+
+.dashedCircle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-width: 1px;
+  border-style: dashed;
+  border-radius: 50%;
+  animation: rotate1 8s linear infinite;
+}
+
+.image1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+}
+
+.circle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  animation: rotate1 8s linear infinite;
+}
+
+.image2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #191919;
+  border: 1px solid transparent;
+  background-clip: padding-box;
+}
+
+.goal {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  border-left-width: 1px;
+  border-left-style: dashed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageText {
+  text-align: center;
+}
+
+
+@keyframes rotate1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+@media (min-width: 481px) {
+
+  .container {
+    width: 420px;
+  }
+
+  .icon {
+    width: 64px;
+    height: 64px;
+  }
+
+  .dashedLine1 {
+    width: 24px;
+  }
+
+  .relation {
+    margin-top: 32px;
+  }
+
+  .circle1Container, .circle2Container {
+    width: 160px;
+    height: 160px;
+  }
+
+  .arrow {
+    margin: 8px;
+  }
+
+  .dashedLine2 {
+    width: 24px;
+  }
+
+  .goal {
+    font-size: 20px;
+  }
+
+  .imageText {
+    font-size: 12px;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  .container {
+    width: 100%;
+  }
+
+  .icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .dashedLine1 {
+    width: 16px;
+  }
+
+  .relation {
+    margin-top: 24px;
+  }
+
+  .circle1Container, .circle2Container {
+    width: 120px;
+    height: 120px;
+  }
+
+  .arrow {
+    margin: 4px;
+  }
+
+  .dashedLine2 {
+    width: 16px;
+  }
+
+  .goal {
+    font-size: 16px;
+  }
+
+  .imageText {
+    font-size: 10px;
+  }
+
+}

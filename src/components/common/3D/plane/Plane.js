@@ -13,9 +13,9 @@ function Plane({position, isDesktop=false}) {
       {isDesktop ? (
       <MeshReflectorMaterial
         blur={[300, 100]}
-        resolution={2048}
+        resolution={1024}
         mixBlur={0.8}
-        mixStrength={80}
+        mixStrength={60}
         roughness={1}
         depthScale={1.2}
         minDepthThreshold={0.4}

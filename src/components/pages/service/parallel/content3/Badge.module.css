@@ -1,0 +1,142 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+  transition: border 0.3s;
+}
+
+.container:hover {
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.iconContainer {
+  display: flex;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+
+@media (min-width: 1025px) {
+
+  .container {
+    height: 180px;
+  }
+
+  .container.small {
+    width: 200px;
+  }
+
+  .container.wide {
+    width: 420px;
+  }
+
+  .iconContainer {
+    margin-top: 20px;
+  }
+
+  .icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .title {
+    margin-top: 10px;
+    height: 50px;
+    font-size: 24px;
+  }
+
+}
+
+
+@media (max-width: 1025px) and (min-width: 481px) {
+
+  .container {
+    height: 180px;
+  }
+
+  .container.small {
+    width: 200px;
+  }
+
+  .container.wide {
+    width: 434px;
+  }
+
+  .iconContainer {
+    margin-top: 20px;
+  }
+
+  .icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .title {
+    margin-top: 10px;
+    height: 50px;
+    font-size: 24px;
+  }
+
+}
+
+
+@media (max-width: 480px) and (min-width: 321px) {
+
+  .container {
+    height: 180px;
+  }
+
+  .container.small, .container.wide {
+    width: 280px;
+  }
+
+  .iconContainer {
+    margin-top: 20px;
+  }
+
+  .icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .title {
+    margin-top: 10px;
+    height: 50px;
+    font-size: 24px;
+  }
+
+}
+
+
+@media (max-width: 320px) {
+
+  .container {
+    height: 180px;
+  }
+
+  .container.small, .container.wide {
+    width: 100%;
+  }
+
+  .iconContainer {
+    margin-top: 20px;
+  }
+
+  .icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .title {
+    margin-top: 10px;
+    height: 50px;
+    font-size: 24px;
+  }
+
+}

@@ -1,7 +1,7 @@
-import SheflaPage from "@/components/pages/service/shefla/SheflaPage";
+import Shefla from "@/components/pages/service/shefla/Shefla";
 
 export default function Page() {
   return (
-    <SheflaPage language="en" />
+    <Shefla language="en" />
   )
 }
