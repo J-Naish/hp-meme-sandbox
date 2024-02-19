@@ -38,7 +38,7 @@ export default function Visualization({ language, color }) {
               <Image
                 src={image2}
                 alt="visualization for shefla"
-                style={{ width: "100%", height: "100%" }}
+                style={{ width: "100%", height: "100%", marginTop: "10px" }}
               />
             </div>
             <div className={styles.title}>

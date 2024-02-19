@@ -1,0 +1,153 @@
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circleContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 90%;
+}
+
+.circleWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: rotate 10s infinite;
+  border-radius: 50%;
+}
+
+.circleOverlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #191919;
+  border: 1px solid transparent;
+  background-clip: padding-box;
+}
+
+.smallCircleOverlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+  background-color: #191919;
+  border: 1px solid transparent;
+  background-clip: padding-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle.largeCircle {
+  width: 100%;
+  height: 100%;
+}
+
+.circle.mediumCircle {
+  width: 80%;
+  height: 80%;
+  animation-delay: 3s;
+}
+
+.circle.smallCircle {
+  width: 60%;
+  height: 60%;
+  animation-delay: 5s;
+}
+
+.dashedCircle {
+  border-style: dashed;
+  border-width: 1px;
+}
+
+.image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 20%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.icon1 {
+  top: 5%;
+  left: 50%;
+}
+.icon2 {
+  left: 10%;
+  top: 35%;
+}
+.icon3 {
+  left: 90%;
+  top: 35%;
+}
+.icon4 {
+  left: 20%;
+  top: 80%;
+}
+.icon5 {
+  left: 80%;
+  top: 80%;
+}
+
+
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  25% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+  75% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+
+
+
+
+@media (min-width: 481px) {
+  .container {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 300px;
+    height: 300px;
+  }
+}

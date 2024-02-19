@@ -4,6 +4,7 @@ import Hero from "../Hero";
 import VideoText from "../VideoText";
 import Spacer from "../Spacer";
 import Content1 from "./content1/Content1";
+import Content2 from "./content2/Content2";
 import { languageMapping } from "./languageMapping";
 
 
@@ -19,6 +20,8 @@ export default function Shefla({ language }) {
       </Hero>
       <Spacer /><Spacer />
       <Content1 language={language} color={color} />
+      <Spacer /><Spacer />
+      <Content2 language={language} color={color} />
     </div>
   );
 }

@@ -34,5 +34,39 @@ export const languageMapping = {
         ja: "インフルエンサー"
       }
     }
+  },
+  content2: {
+    title: {
+      en: "Strengths",
+      ja: "Strengths"
+    },
+    subtitle: {
+      en: "Shefla's strengths",
+      ja: "Sheflaの強み"
+    },
+    p1: {
+      en: "The Shefla marketing team not only has SNS specialists, but also",
+      ja: "Sheflaマーケティングチームは、SNSが専門のマーケッターがいるだけでなく"
+    },
+    p2: {
+      en: "designers specializing in SNS design",
+      ja: "SNSでのデザインに特化したデザイナー"
+    },
+    p3: {
+      en: "writers specializing in SNS writing",
+      ja: "SNSでのライティングに特化したライター"
+    },
+    p4: {
+      en: "data analysts specializing in SNS data analysis",
+      ja: "SNSでのデータ分析に特化したデータアナリスト"
+    },
+    p5: {
+      en: "and other specialists in various fields are members of the team, so we can support everything necessary for SNS operation.",
+      ja: "などのSNSの運用に必要なあらゆる分野の専門家が所属しているためSNS運用に必要な全てのことをサポートできます。"
+    },
+    p6: {
+      en: "We are also a business that can provide support for those who are not good at using SNS.",
+      ja: "SNSの活用に不安があるどんな方でもSheflaでは0から100までの支援が可能です。"
+    }
   }
 }
