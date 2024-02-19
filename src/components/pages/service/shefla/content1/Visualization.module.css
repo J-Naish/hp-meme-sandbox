@@ -1,0 +1,132 @@
+.container {
+  position: relative;
+}
+
+.item1Container, .item2Container {
+  position: absolute;
+}
+.item1Container {
+  top: 40%;
+  left: 0;
+  z-index: 2;
+}
+.item2Container {
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.item1Wrapper, .item2Wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashedCircle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: dashed;
+  animation: rotate1 16s linear infinite;
+}
+
+.circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  animation: rotate2 7s linear infinite;
+}
+
+.item1 {
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid transparent;
+  background-clip: padding-box;
+  background-color: #191919;
+}
+
+
+@keyframes rotate1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+
+@media (min-width: 481px) {
+
+  .container {
+    width: 400px;
+    height: 400px;
+  }
+
+  .item1Container, .item2Container {
+    position: absolute;
+    width: 240px;
+    height: 240px;
+  }
+
+  .icon {
+    width: 120px;
+    height: 120px;
+    margin-top: 20px;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  .container {
+    width: 300px;
+    height: 300px;
+  }
+
+  .item1Container, .item2Container {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+  }
+
+  .icon {
+    width: 90px;
+    height: 90px;
+  }
+
+}

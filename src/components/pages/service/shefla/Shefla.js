@@ -2,8 +2,13 @@ import styles from "./Shefla.module.css";
 import Underlay from "../Underlay";
 import Hero from "../Hero";
 import VideoText from "../VideoText";
+import Spacer from "../Spacer";
+import Content1 from "./content1/Content1";
 import { languageMapping } from "./languageMapping";
 
+
+
+const color = "#C1848E";
 
 export default function Shefla({ language }) {
   return (
@@ -12,6 +17,8 @@ export default function Shefla({ language }) {
       <Hero>
         <VideoText position={[0, 0.5, -2]} title={languageMapping.title[language]} src="/assets/textures/video/shefla.mp4" />
       </Hero>
+      <Spacer /><Spacer />
+      <Content1 language={language} color={color} />
     </div>
   );
 }
