@@ -4,6 +4,7 @@ import styles from "./ServiceSection.module.css";
 import commonStyles from "./Common.module.css";
 import BorderLine from '@/components/common/UI/line/BorderLine';
 import ImmersiveCard from "@/components/common/UI/card/ImmersiveCard";
+import Text from "@/components/common/3D/Text";
 import { languageMapping } from "./languageMapping";
 import metaInfluencer from "../../../../../public/images/meta-influencer-symbol.webp";
 import parallel from "../../../../../public/images/parallel-symbol.webp";
@@ -33,8 +34,10 @@ function ServiceSection({ language }) {
             description={languageMapping.metaInfluencer.description[language]}
             link={languageMapping.metaInfluencer.link[language]}
             color={color1}
-            glbUrl="/assets/model/meta-influencer.glb"
-          />
+          >
+            <Text title="Meta" position={[0, 0.6, 0]} color={color1} scale={[1, 1, 1]} />
+            <Text title="Influencer" position={[0, -0.6, 0]} color={color1} scale={[1, 1, 1]} />
+          </ImmersiveCard>
         </div>
         <div className={styles.cardWrapper}>
           <ImmersiveCard
@@ -43,8 +46,9 @@ function ServiceSection({ language }) {
             description={languageMapping.parallel.description[language]}
             link={languageMapping.parallel.link[language]}
             color={color2}
-            glbUrl="/assets/model/parallel.glb"
-          />
+          >
+            <Text title="Parallel" position={[0, 0, 0]} color={color2} scale={[1, 1, 1]} />
+          </ImmersiveCard>
         </div>
         <div className={styles.cardWrapper}>
           <ImmersiveCard
@@ -53,8 +57,9 @@ function ServiceSection({ language }) {
             description={languageMapping.shefla.description[language]}
             link={languageMapping.shefla.link[language]}
             color={color3}
-            glbUrl="/assets/model/shefla.glb"
-          />
+          >
+            <Text title="Shefla" position={[0, 0, 0]} color={color3} scale={[1, 1, 1]} />
+          </ImmersiveCard>
         </div>
       </div>
 

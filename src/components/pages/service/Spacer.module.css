@@ -1,0 +1,21 @@
+.spacer {
+  width: 100%;
+}
+
+@media (min-width: 1025px) {
+  .spacer {
+    height: 60px;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 481px) {
+  .spacer {
+    height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .spacer {
+    height: 40px;
+  }
+}

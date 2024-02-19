@@ -1,16 +1,15 @@
 'use client';
 
 import Image from 'next/image';
-import { useState, useRef, useEffect } from 'react';
-import { Canvas, useFrame } from '@react-three/fiber';
+import { useState, useEffect } from 'react';
+import { Canvas } from '@react-three/fiber';
 import styles from './ImmersiveCard.module.css';
-import Glb from '@/components/common/3D/glb/Glb.js';
 import Lighting from '@/components/common/3D/lighting/Lighting.js';
 import EnvironmentMap from '@/components/common/3D/environment/EnvironmentMap.js'
 import LinkButton from '@/components/common/UI/button/button.js';
 
 
-export default function ImmersiveCard({ imgUrl, title, description, color, glbUrl, link }) {
+export default function ImmersiveCard({ imgUrl, title, description, color, link, children }) {
 
   // state for card is hovered or clicked
   const [isActive, setIsActive] = useState(false);
@@ -70,9 +69,9 @@ export default function ImmersiveCard({ imgUrl, title, description, color, glbUr
         {is3dActive && (
         <>
           <Canvas className={styles.canvas}>
-            <CustomGlb glbUrl={glbUrl} scale={1}/>
             <Lighting intensity={4} />
             <EnvironmentMap isBright={true} />
+            {children}
           </Canvas>
           <div className={styles.buttonWrapper}>
             <LinkButton label="Learn More" link={link} />
@@ -83,28 +82,5 @@ export default function ImmersiveCard({ imgUrl, title, description, color, glbUr
       </div>
 
     </div>
-  );
-}
-
-
-function CustomGlb({ glbUrl, scale }) {
-
-  const groupRef = useRef();
-
-  useFrame(() => {
-    if(!groupRef.current) return;
-
-    // rotate the group containing the model
-    groupRef.current.rotation.y += 0.005;
-  });
-
-
-  return(
-    <Glb
-      glbUrl={glbUrl}
-      groupRef={groupRef}
-      position={[0, 0, 0]}
-      scale={scale}
-    />
   );
 }

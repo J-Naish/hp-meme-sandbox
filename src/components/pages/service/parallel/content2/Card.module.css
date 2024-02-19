@@ -1,0 +1,154 @@
+.container {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  transition: border 0.3s;
+}
+
+.container:hover {
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.head {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+
+@media (min-width: 1025px) {
+
+  .container {
+    width: 420px;
+    padding: 20px 30px;
+    border-radius: 12px;
+  }
+
+  .container.large {
+    height: 310px;
+  }
+  .container.small {
+    height: 280px;
+  }
+
+  .icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .title {
+    font-size: 20px;
+    margin-left: 12px;
+  }
+
+  .body {
+    margin-top: 20px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
+}
+
+
+@media (max-width: 1024px) and (min-width: 481px) {
+
+  .container {
+    width: 460px;
+    padding: 20px 30px;
+    border-radius: 12px;
+  }
+
+  .container.large {
+    height: 300px;
+  }
+  .container.small {
+    height: 260px;
+  }
+
+  .icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .title {
+    font-size: 20px;
+    margin-left: 12px;
+  }
+
+  .body {
+    margin-top: 20px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
+}
+
+
+@media (max-width: 480px) and (min-width: 340px) {
+
+  .container {
+    width: 320px;
+    padding: 12px 24px;
+    border-radius: 12px;
+  }
+
+  .container.large {
+    height: 230px;
+  }
+  .container.small {
+    height: 220px;
+  }
+
+  .icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .title {
+    font-size: 16px;
+    margin-left: 12px;
+  }
+
+  .body {
+    margin-top: 20px;
+  }
+
+  .text {
+    font-size: 12px;
+  }
+
+}
+
+
+@media (max-width: 339px) {
+
+  .container {
+    width: 100%;
+    padding: 12px 24px;
+    border-radius: 12px;
+  }
+
+  .icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .title {
+    font-size: 16px;
+    margin-left: 12px;
+  }
+
+  .body {
+    margin-top: 20px;
+  }
+
+  .text {
+    font-size: 12px;
+  }
+
+}

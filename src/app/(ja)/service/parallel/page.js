@@ -1,5 +1,4 @@
-import ParallelPage from "@/components/pages/service/parallel/ParallelPage";
-
+import Parallel from "@/components/pages/service/parallel/Parallel";
 
 export const metadata = {
   metadataBase: new URL('https://llcmeme.com/service/parallel'),
@@ -23,6 +22,6 @@ export const metadata = {
 
 export default function Page() {
   return (
-    <ParallelPage language="ja" />
+    <Parallel language="ja" />
   )
 }
