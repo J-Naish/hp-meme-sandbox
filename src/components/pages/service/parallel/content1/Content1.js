@@ -1,5 +1,6 @@
 import styles from './Content1.module.css';
 import Title from '../../Title';
+import Visualization from './Visualization';
 import { languageMapping } from '../languageMapping';
 
 
@@ -22,6 +23,7 @@ export default function Content1({ language, color }) {
           <p className={styles.text}>{languageMapping.content1.p3[language]}</p>
         </div>
         <div className={styles.visualization}>
+          <Visualization color={color} />
         </div>
       </div>
     </div>
