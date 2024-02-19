@@ -34,8 +34,8 @@ export default function Parallel({ language }) {
       <Content4 language={language} color={color} />
       <Spacer /><Spacer />
       <Content5 language={language} color={color} />
-      <Spacer /><Spacer /><Spacer /><Spacer />
-      {/* <div className={styles.button}>
+      {/* <Spacer /><Spacer /><Spacer /><Spacer />
+      <div className={styles.button}>
         <LinkButton hasExternalLink={true} link={link} label="Learn More" />
       </div> */}
       <Spacer /><Spacer />
