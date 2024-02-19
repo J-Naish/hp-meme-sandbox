@@ -6,6 +6,7 @@ import Spacer from "../Spacer";
 import Content1 from "./content1/Content1";
 import Content2 from "./content2/Content2";
 import Content3 from "./content3/Content3";
+import LinkButton from "@/components/common/UI/button/button";
 import { languageMapping } from "./languageMapping";
 
 
@@ -25,6 +26,11 @@ export default function Shefla({ language }) {
       <Content2 language={language} color={color} />
       <Spacer /><Spacer />
       <Content3 language={language} color={color} />
+      <Spacer /><Spacer /><Spacer />
+      <div className={styles.button}>
+        <LinkButton hasExternalLink={true} link="https://seeedtoflower.com/" label="Learn More" />
+      </div>
+      <Spacer /><Spacer />
     </div>
   );
 }
