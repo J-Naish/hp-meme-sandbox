@@ -68,5 +68,27 @@ export const languageMapping = {
       en: "We are also a business that can provide support for those who are not good at using SNS.",
       ja: "SNSの活用に不安があるどんな方でもSheflaでは0から100までの支援が可能です。"
     }
+  },
+  content3: {
+    title: {
+      en: "Flow",
+      ja: "Flow"
+    },
+    subtitle: {
+      en: "Flow of SNS operation support",
+      ja: "SNS運用支援の流れ"
+    },
+    p1: {
+      en: "Once it is decided that we will support the person, Shefla's marketers will create a strategy according to the person's ultimate goal.",
+      ja: "SNS支援させていただくことが決まり次第、その方の最終的な目標に合わせてSheflaのマーケターが戦略を作り上げます。"
+    },
+    p2: {
+      en: "Based on that strategy, we will work with designers and writers to build an actual operation flow.",
+      ja: "その戦略に基づき、デザイナーやライターとの連携のもと実際の運用フローを共に構築していきます。"
+    },
+    p3: {
+      en: "In the meantime, data analysts will continue to improve the data collection system for operating SNS accounts and the operation flow.",
+      ja: "その中でデータアナリストが運用SNSアカウントのデータ収集システムを構築し運用フローの改善を継続的に行っていきます。"
+    }
   }
 }
