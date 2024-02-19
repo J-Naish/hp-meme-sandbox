@@ -6,6 +6,7 @@ import Spacer from "../Spacer";
 import Content1 from "./content1/Content1";
 import Content2 from "./content2/Content2";
 import Content3 from "./content3/Content3";
+import ScrollText from "../ScrollText";
 import { languageMapping } from "./languageMapping";
 
 
@@ -21,6 +22,12 @@ export default function MetaInfluencer({ language }) {
       </Hero>
       <Spacer /><Spacer />
       <Content1 language={language} color={color} />
+      <Spacer /><Spacer />
+      <ScrollText
+        text1="AI Technology"
+        text2="3D Design"
+        text3="SNS Marketing"
+      />
       <Spacer /><Spacer />
       <Content2 language={language} color={color} />
       <Spacer /><Spacer />

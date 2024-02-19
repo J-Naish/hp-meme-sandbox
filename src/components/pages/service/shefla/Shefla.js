@@ -6,6 +6,7 @@ import Spacer from "../Spacer";
 import Content1 from "./content1/Content1";
 import Content2 from "./content2/Content2";
 import Content3 from "./content3/Content3";
+import ScrollText from "../ScrollText";
 import LinkButton from "@/components/common/UI/button/button";
 import { languageMapping } from "./languageMapping";
 
@@ -22,6 +23,12 @@ export default function Shefla({ language }) {
       </Hero>
       <Spacer /><Spacer />
       <Content1 language={language} color={color} />
+      <Spacer /><Spacer />
+      <ScrollText
+        text1="SNS Marketing"
+        text2="Data Analysis"
+        text3="Brand Strategy"
+      />
       <Spacer /><Spacer />
       <Content2 language={language} color={color} />
       <Spacer /><Spacer />

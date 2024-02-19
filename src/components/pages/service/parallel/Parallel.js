@@ -8,6 +8,7 @@ import Content2 from "./content2/Content2";
 import Content3 from "./content3/Content3";
 import Content4 from "./content4/Content4";
 import Content5 from "./content5/Content5";
+import ScrollText from "../ScrollText";
 import LinkButton from "@/components/common/UI/button/button";
 import { languageMapping } from "./languageMapping";
 
@@ -26,6 +27,12 @@ export default function Parallel({ language }) {
       </Hero>
       <Spacer /><Spacer />
       <Content1 language={language} color={color} />
+      <Spacer /><Spacer />
+      <ScrollText
+        text1="XR Development"
+        text2="Web Development"
+        text3="Game Development"
+      />
       <Spacer /><Spacer />
       <Content2 language={language} color={color} />
       <Spacer /><Spacer />
