@@ -4,15 +4,15 @@ import Title from "../../Title";
 import Card from "./Card";
 import { languageMapping } from "../languageMapping";
 
-import image1_1 from "../../../../../../public/images/service/parallel/content2/web/1.png";
-import image1_2 from "../../../../../../public/images/service/parallel/content2/web/2.png";
-import image1_3 from "../../../../../../public/images/service/parallel/content2/web/3.png";
-import image1_4 from "../../../../../../public/images/service/parallel/content2/web/4.png";
+import image1_1 from "@/public/images/service/parallel/content2/web/1.png";
+import image1_2 from "@/public/images/service/parallel/content2/web/2.png";
+import image1_3 from "@/public/images/service/parallel/content2/web/3.png";
+import image1_4 from "@/public/images/service/parallel/content2/web/4.png";
 
-import image2_1 from "../../../../../../public/images/service/parallel/content2/video/1.png";
-import image2_2 from "../../../../../../public/images/service/parallel/content2/video/2.png";
-import image2_3 from "../../../../../../public/images/service/parallel/content2/video/3.png";
-import image2_4 from "../../../../../../public/images/service/parallel/content2/video/4.png";
+import image2_1 from "@/public/images/service/parallel/content2/video/1.png";
+import image2_2 from "@/public/images/service/parallel/content2/video/2.png";
+import image2_3 from "@/public/images/service/parallel/content2/video/3.png";
+import image2_4 from "@/public/images/service/parallel/content2/video/4.png";
 
 export default function Content2({ language, color }) {
   return (

@@ -6,9 +6,9 @@ import commonStyles from './Common.module.css';
 import BorderLine from '@/components/common/UI/line/BorderLine'
 import { languageMapping } from './languageMapping';
 import SimpleCard from '@/components/common/UI/card/SimpleCard';
-import marketingSymbol from '../../../../../public/images/marketing-symbol.webp';
-import developmentSymbol from '../../../../../public/images/development-symbol.webp';
-import designSymbol from '../../../../../public/images/design-symbol.webp';
+import marketingSymbol from '@/public/images/marketing-symbol.webp';
+import developmentSymbol from '@/public/images/development-symbol.webp';
+import designSymbol from '@/public/images/design-symbol.webp';
 
 
 

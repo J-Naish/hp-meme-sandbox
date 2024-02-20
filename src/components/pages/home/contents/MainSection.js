@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { useRef, useState, useEffect } from 'react'; 
 import styles from './MainSection.module.css';
-import downwardSymbol from '../../../../../public/images/downward.webp';
+import downwardSymbol from '@/public/images/downward.webp';
 
 
 export default function MainSection() {

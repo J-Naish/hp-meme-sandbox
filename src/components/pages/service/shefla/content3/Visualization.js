@@ -1,12 +1,12 @@
 import Image from 'next/image';
 import styles from './Visualization.module.css';
 import Arrow from './Arrow';
-import icon1 from "../../../../../../public/images/service/shefla/content3/icon1.png";
-import icon2 from "../../../../../../public/images/service/shefla/content3/icon2.png";
-import icon3 from "../../../../../../public/images/service/shefla/content3/icon3.png";
-import icon4 from "../../../../../../public/images/service/shefla/content3/icon4.png";
-import image1 from "../../../../../../public/images/service/shefla/content3/image1.png";
-import image2 from "../../../../../../public/images/service/shefla/content3/image2.png";
+import icon1 from "@/public/images/service/shefla/content3/icon1.png";
+import icon2 from "@/public/images/service/shefla/content3/icon2.png";
+import icon3 from "@/public/images/service/shefla/content3/icon3.png";
+import icon4 from "@/public/images/service/shefla/content3/icon4.png";
+import image1 from "@/public/images/service/shefla/content3/image1.png";
+import image2 from "@/public/images/service/shefla/content3/image2.png";
 
 
 export default function Visualization({ color }) {

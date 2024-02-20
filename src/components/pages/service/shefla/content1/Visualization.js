@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./Visualization.module.css";
-import image1 from "../../../../../../public/images/service/shefla/content1/image1.png";
-import image2 from "../../../../../../public/images/service/shefla/content1/image2.png";
+import image1 from "@/public/images/service/shefla/content1/image1.png";
+import image2 from "@/public/images/service/shefla/content1/image2.png";
 import { languageMapping } from "../languageMapping";
 
 

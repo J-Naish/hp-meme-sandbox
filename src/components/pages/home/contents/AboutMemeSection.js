@@ -4,9 +4,9 @@ import LinkButton from '@/components/common/UI/button/button';
 import BorderLine from '@/components/common/UI/line/BorderLine';
 import Panel from '@/components/common/UI/card/Panel';
 import { languageMapping } from "./languageMapping";
-import missionSymbol from '../../../../../public/images/mission.webp';
-import visionSymbol from '../../../../../public/images/vision.webp';
-import valueSymbol from '../../../../../public/images/value.webp';
+import missionSymbol from '@/public/images/mission.webp';
+import visionSymbol from '@/public/images/vision.webp';
+import valueSymbol from '@/public/images/value.webp';
 
 // about meme section
 function AboutMemeSection({ language }) {

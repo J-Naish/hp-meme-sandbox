@@ -6,9 +6,9 @@ import BorderLine from '@/components/common/UI/line/BorderLine';
 import ImmersiveCard from "@/components/common/UI/card/ImmersiveCard";
 import Text from "@/components/common/3D/Text";
 import { languageMapping } from "./languageMapping";
-import metaInfluencer from "../../../../../public/images/meta-influencer-symbol.webp";
-import parallel from "../../../../../public/images/parallel-symbol.webp";
-import shefla from "../../../../../public/images/shefla-symbol.webp";
+import metaInfluencer from "@/public/images/meta-influencer-symbol.webp";
+import parallel from "@/public/images/parallel-symbol.webp";
+import shefla from "@/public/images/shefla-symbol.webp";
 
 
 const color1 = "rgb(255,160,0)";

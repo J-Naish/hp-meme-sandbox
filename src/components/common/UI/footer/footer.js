@@ -4,7 +4,7 @@ import styles from "./footer.module.css";
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import logoImage from "../../../../../public/images/logo.png";
+import logoImage from "@/public/images/logo.png";
 import { linkMap } from "@/map/linkMap";
 
 

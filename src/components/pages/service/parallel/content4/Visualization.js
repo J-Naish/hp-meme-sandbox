@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./Visualization.module.css";
 
-import image from "../../../../../../public/images/service/parallel/content4/image.png";
+import image from "@/public/images/service/parallel/content4/image.png";
 
 
 export default function Visualization({ color }) {

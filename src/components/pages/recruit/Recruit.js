@@ -7,7 +7,7 @@ import Background from '@/components/common/UI/background/Background';
 import { languageMapping } from './languageMapping.js';
 import RecruitList from './RecruitList.js';
 import { RecruitPositionEngineer, RecruitPositionMarketer, RecruitPositionDesigner } from './RecruitPosition.js';
-import recruitBgImage from '../../../../public/images/recruit.webp';
+import recruitBgImage from '@/public/images/recruit.webp';
 
 
 

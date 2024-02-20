@@ -4,10 +4,10 @@ import Card from "@/components/common/UI/card/Card";
 import LinkButton from "@/components/common/UI/button/button";
 import BorderLine from '@/components/common/UI/line/BorderLine'
 import { languageMapping } from "./languageMapping";
-import recruitSymbol from "../../../../../public/images/recruit-symbol.webp";
-import contactSymbol from "../../../../../public/images/contact-symbol.webp";
-import newsSymbol from "../../../../../public/images/news-symbol.webp";
-import infoSymbol from "../../../../../public/images/info-symbol.webp";
+import recruitSymbol from "@/public/images/recruit-symbol.webp";
+import contactSymbol from "@/public/images/contact-symbol.webp";
+import newsSymbol from "@/public/images/news-symbol.webp";
+import infoSymbol from "@/public/images/info-symbol.webp";
 
 
 

@@ -9,8 +9,8 @@ import Dropdown from "./dropdown/Dropdown";
 import HamburgerDropdown from "./dropdown/HamburgerDropdown";
 import HamburgerButton from "./HamburgerButton";
 import ThinLine from "../line/ThinLine";
-import logoImage from "../../../../../public/images/logo.png";
-import dropdownSymbol from "../../../../../public/images/downward.webp";
+import logoImage from "@/public/images/logo.png";
+import dropdownSymbol from "@/public/images/downward.webp";
 
 
 const mapping = {

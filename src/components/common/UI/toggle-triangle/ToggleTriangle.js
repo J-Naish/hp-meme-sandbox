@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./ToggleTriangle.module.css";
-import triangleSymbol from "../../../../../public/images/triangle.webp";
+import triangleSymbol from "@/public/images/triangle.webp";
 
 
 // triangle symbol to open and close the dropdown

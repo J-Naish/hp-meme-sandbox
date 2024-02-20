@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./Visualization.module.css";
-import image from "/public/images/service/parallel/content5/image.png";
+import image from "@/public/images/service/parallel/content5/image.png";
 
 
 

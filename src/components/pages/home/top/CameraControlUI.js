@@ -5,7 +5,7 @@ import { useEffect, useState, useMemo } from 'react';
 import Image from "next/image";
 import { useShareContext } from "../ShareContext.js";
 import { useResponsive } from "@/components/common/utils/useResponsive";
-import downwardSymbol from '../../../../../public/images/downward.webp';
+import downwardSymbol from '@/public/images/downward.webp';
 
 
 

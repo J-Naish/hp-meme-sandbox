@@ -5,7 +5,7 @@ import styles from './Loading.module.css';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { useProgress } from '@react-three/drei';
-import logoImage from '../../../../../public/images/logo.png';
+import logoImage from '@/public/images/logo.png';
 
 
 

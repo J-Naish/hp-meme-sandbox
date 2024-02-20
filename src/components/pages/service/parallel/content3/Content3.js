@@ -3,19 +3,19 @@ import Title from '../../Title';
 import Badge from './Badge';
 import { languageMapping } from '../languageMapping';
 
-import image1 from '../../../../../../public/images/service/parallel/content3/1.png';
-import image2 from '../../../../../../public/images/service/parallel/content3/2.png';
-import image3 from '../../../../../../public/images/service/parallel/content3/3.png';
-import image4 from '../../../../../../public/images/service/parallel/content3/4.png';
-import image5 from '../../../../../../public/images/service/parallel/content3/5.png';
-import image6 from '../../../../../../public/images/service/parallel/content3/6.png';
-import image7 from '../../../../../../public/images/service/parallel/content3/7.png';
-import image8 from '../../../../../../public/images/service/parallel/content3/8.png';
-import image9 from '../../../../../../public/images/service/parallel/content3/9.png';
-import image10 from '../../../../../../public/images/service/parallel/content3/10.png';
-import image11_1 from '../../../../../../public/images/service/parallel/content3/11_1.png';
-import image11_2 from '../../../../../../public/images/service/parallel/content3/11_2.png';
-import image11_3 from '../../../../../../public/images/service/parallel/content3/11_3.png';
+import image1 from '@/public/images/service/parallel/content3/1.png';
+import image2 from '@/public/images/service/parallel/content3/2.png';
+import image3 from '@/public/images/service/parallel/content3/3.png';
+import image4 from '@/public/images/service/parallel/content3/4.png';
+import image5 from '@/public/images/service/parallel/content3/5.png';
+import image6 from '@/public/images/service/parallel/content3/6.png';
+import image7 from '@/public/images/service/parallel/content3/7.png';
+import image8 from '@/public/images/service/parallel/content3/8.png';
+import image9 from '@/public/images/service/parallel/content3/9.png';
+import image10 from '@/public/images/service/parallel/content3/10.png';
+import image11_1 from '@/public/images/service/parallel/content3/11_1.png';
+import image11_2 from '@/public/images/service/parallel/content3/11_2.png';
+import image11_3 from '@/public/images/service/parallel/content3/11_3.png';
 const image11 = [image11_1, image11_2, image11_3];
 
 

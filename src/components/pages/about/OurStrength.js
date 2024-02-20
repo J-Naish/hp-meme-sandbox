@@ -3,12 +3,12 @@
 import styles from "./Common.module.css";
 import Image from "next/image";
 import { useResponsive } from '@/components/common/utils/useResponsive.js';
-import devDesktopImage from '../../../../public/images/strength-development-desktop.webp';
-import devImage from "../../../../public/images/strength-development.webp";
-import designDesktopImage from "../../../../public/images/strength-design-desktop.webp";
-import designImage from "../../../../public/images/strength-design.webp";
-import marketingDesktopImage from "../../../../public/images/strength-marketing-desktop.webp";
-import marketingImage from "../../../../public/images/strength-marketing.webp";
+import devDesktopImage from '@/public/images/strength-development-desktop.webp';
+import devImage from "@/public/images/strength-development.webp";
+import designDesktopImage from "@/public/images/strength-design-desktop.webp";
+import designImage from "@/public/images/strength-design.webp";
+import marketingDesktopImage from "@/public/images/strength-marketing-desktop.webp";
+import marketingImage from "@/public/images/strength-marketing.webp";
 
 
 function OurStrength({ language }) {

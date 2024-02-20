@@ -3,7 +3,7 @@
 import styles from './button.module.css';
 import Link from 'next/link';
 import Image from 'next/image'
-import triangleSymbol from "../../../../../public/images/triangle.webp";
+import triangleSymbol from "@/public/images/triangle.webp";
 
 
 // button that redirects to another page or web site
