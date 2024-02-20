@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 
 // component for the dropdown shown when hamburger is clicked
-export default function HamburgerDropdown({ title, items, links }) {
+export default function HamburgerDropdown({ title, items, links, onClick }) {
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -28,7 +28,7 @@ export default function HamburgerDropdown({ title, items, links }) {
       </div>
         <div className={`${styles.list} ${isOpen ? styles.openList : ''}`}>
           {items.map((item, index) => (
-            <Link href={links[index]} key={index}>
+            <Link href={links[index]} onClick={onClick} key={index}>
               <div className={styles.item}>{item}</div>
             </Link>
           ))}

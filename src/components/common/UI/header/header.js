@@ -113,7 +113,7 @@ function Header({ language }) {
       <HeaderNav language={language} />
       <div className={styles.hamburger}>
         <HamburgerButton isHamburgerClicked={isHamburgerClicked} setIsHamburgerClicked={setIsHamburgerClicked} />
-        <HamburgerMenu language={language} customStyles={menuStyles} setIsHamburgerClicked={() => setIsHamburgerClicked(!isHamburgerClicked)} />
+        <HamburgerMenu language={language} customStyles={menuStyles} onClick={() => setIsHamburgerClicked(false)} />
       </div>
     </div>
   );
@@ -214,18 +214,18 @@ function HeaderNavRight({ language }) {
 
 
 // component shown when hamburger button is clicked
-function HamburgerMenu({ customStyles, language }) {
+function HamburgerMenu({ customStyles, language, onClick }) {
   return (
     <div className={styles.hamburgerMenuWrapper} style={customStyles}>
       <div className={styles.hamburgerMenu}>
       <ThinLine />
-      <HamburgerDropdown items={mapping.service.items[language]} links={mapping.service.links[language]} title="Service"/>
+      <HamburgerDropdown items={mapping.service.items[language]} links={mapping.service.links[language]} title="Service" onClick={onClick} />
       <ThinLine />
-      <HamburgerDropdown items={mapping.company.items[language]} links={mapping.company.links[language]} title="Company" />
+      <HamburgerDropdown items={mapping.company.items[language]} links={mapping.company.links[language]} title="Company" onClick={onClick} />
       <ThinLine />
-      <HamburgerDropdown items={mapping.contact.items[language]} links={mapping.contact.links[language]} title="Contact" />
+      <HamburgerDropdown items={mapping.contact.items[language]} links={mapping.contact.links[language]} title="Contact" onClick={onClick} />
       <ThinLine />
-      <HamburgerDropdown items={mapping.language.items[language]} links={mapping.language.links[language]} title="Language" />
+      <HamburgerDropdown items={mapping.language.items[language]} links={mapping.language.links[language]} title="Language" onClick={onClick} />
       <ThinLine />
       </div>
     </div>
