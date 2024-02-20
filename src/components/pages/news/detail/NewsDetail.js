@@ -50,7 +50,7 @@ export default async function NewsDetail({ id, language }) {
       <div className={styles.imageContainer}>
         <Image
           src={image}
-          alt={`image of ${title}`}
+          alt="image of the news"
           width={100}
           height={100}
           unoptimized={true}

@@ -14,7 +14,7 @@ export default function NewsCard({ title, imageLink, date, id, language }) {
         <div className={styles.imageWrapper}>
           <Image
             src={imageLink}
-            alt={`image for the news of ${title}`}
+            alt="image of the news"
             unoptimized={true}
             width={100}
             height={100}
