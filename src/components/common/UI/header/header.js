@@ -109,7 +109,7 @@ function Header({ language }) {
 
   return (
     <div className={`${styles.container} ${headerStyle}`}>
-      <HeaderLogo language={language} />
+      <HeaderLogo language={language} onClick={() => setIsHamburgerClicked(false)} />
       <HeaderNav language={language} />
       <div className={styles.hamburger}>
         <HamburgerButton isHamburgerClicked={isHamburgerClicked} setIsHamburgerClicked={setIsHamburgerClicked} />
@@ -121,9 +121,9 @@ function Header({ language }) {
 
 
 // component for the header logo
-function HeaderLogo({ language }) {
+function HeaderLogo({ language, onClick }) {
   return (
-    <Link href={linkMap.home[language]} className={styles.logoContainer}>
+    <Link href={linkMap.home[language]} className={styles.logoContainer} onClick={onClick}>
       <Image
         src={logoImage}
         width={40}
