@@ -4,7 +4,7 @@
 import styles from './Loading.module.css';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import { useProgress } from '@react-three/drei';
+import { useProgress, useGLTF, useTexture, useFont } from '@react-three/drei';
 import logoImage from '@/public/images/logo.png';
 
 
@@ -19,7 +19,7 @@ function Loading() {
     if(progress === 100) {
       setTimeout(() => {
         setLoaded(true);
-      }, 1000)
+      }, 1500)
     }
   }, [progress, setLoaded])
 
@@ -30,7 +30,7 @@ function Loading() {
     if(loaded) {
       setTimeout(() => {
         setHiddenStyle({ display: "none" });
-      }, 500)
+      }, 1000)
     }
   }, [loaded])
 
@@ -111,6 +111,21 @@ function LoadingUI({loaded, hiddenStyle, isDefault=false, children}) {
     </div>
   )
 }
+
+
+
+useGLTF.preload("/assets/model/meme-base.glb");
+useGLTF.preload("/assets/model/meme-letters.glb");
+useGLTF.preload("/assets/model/projector.glb");
+useTexture.preload("/assets/hdri/dark.hdr");
+useTexture.preload("/images/about-display.jpg");
+useTexture.preload("/images/contact-display.jpg");
+useTexture.preload("/images/info-display.jpg");
+useTexture.preload("/images/meta-influencer-display.jpg");
+useTexture.preload("/images/parallel-display.jpg");
+useTexture.preload("/images/recruit-display.jpg");
+useTexture.preload("/images/shefla-display.jpg");
+useFont.preload("/assets/font/Inter_Medium_Regular.json");
 
 
 export default Loading;
