@@ -69,7 +69,6 @@ export default function ImmersiveCard({ imgUrl, title, description, color, link,
         {is3dActive && (
         <>
           <Canvas className={styles.canvas}>
-            <Lighting intensity={4} />
             <EnvironmentMap isBright={true} />
             {children}
           </Canvas>
