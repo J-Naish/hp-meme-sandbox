@@ -29,8 +29,11 @@ function Loading() {
   useEffect(() => {
     if(loaded) {
       setTimeout(() => {
+        document.body.style.overflow = "auto";
         setHiddenStyle({ display: "none" });
       }, 1000)
+    } else {
+      document.body.style.overflow = "hidden";
     }
   }, [loaded])
 
